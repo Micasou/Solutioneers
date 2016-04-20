@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solutioneers", "Solutioneers\Solutioneers.csproj", "{9853D3EC-6287-4A0C-9E2C-BD4C401362DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solutioneers.Tests", "Solutioneers.Tests\Solutioneers.Tests.csproj", "{1D4DD9B0-1C12-4562-9E21-4B7E20F76DBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9853D3EC-6287-4A0C-9E2C-BD4C401362DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9853D3EC-6287-4A0C-9E2C-BD4C401362DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9853D3EC-6287-4A0C-9E2C-BD4C401362DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9853D3EC-6287-4A0C-9E2C-BD4C401362DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4DD9B0-1C12-4562-9E21-4B7E20F76DBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4DD9B0-1C12-4562-9E21-4B7E20F76DBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4DD9B0-1C12-4562-9E21-4B7E20F76DBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4DD9B0-1C12-4562-9E21-4B7E20F76DBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
