@@ -9,7 +9,7 @@ namespace Solutioneers.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Solutioneers.Models.ApplicationDbContext context)

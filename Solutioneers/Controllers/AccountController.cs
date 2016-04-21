@@ -151,7 +151,10 @@ namespace Solutioneers.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email,
+                    Email = model.Email,
+                    MyUserInfo = new MyUserInfo { BirthDate = model.BirthDate }
+                    };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
