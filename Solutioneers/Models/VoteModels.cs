@@ -11,6 +11,5 @@ namespace Solutioneers.Models
             [Key]
             public virtual int UID { get; set; } //User ID is attached to this, can only contain one.
             public virtual Boolean upVote { get; set; } //If true user voted up, if not, user voted down
-        
     }
 }
