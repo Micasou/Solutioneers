@@ -15,5 +15,6 @@ namespace Solutioneers.Models
         public virtual int GID { get; set; } //Group ID
         public virtual string Title { get; set; } // Title of the group
         public virtual string Description { get; set; } //Description of types of problems + solutions that will be found here.
+        public virtual List<ProblemModel> Problems { get; set; } //entity framework manages the foriegn keys for us
     }
 }

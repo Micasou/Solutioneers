@@ -14,12 +14,12 @@ namespace Solutioneers.Models
         /// Please see here for additional info: "https://msdn.microsoft.com/en-us/data/jj591583.aspx".
         /// </summary>
         [Key]
-        public virtual int UID { get; set; } //User ID 
+        public virtual int UID { get; set; } //User ID, the one who posted it.
         [Key]
         public virtual int PID { get; set; } //Problem ID
-        [Key]
-        public virtual int GID { get; set; } //Group ID
-        [MaxLength(255)]
+        public virtual List<SolutionModel> Solutions { get; set; } //entity framework manages the foriegn keys for us
+        public virtual List<VoteModels> Votes { get; set; } //entity framework manages the foriegn keys for us
+        [MaxLength(100)]
         public string Title { get; set; }
         [MaxLength(255)]    // sets max length to 255
         public string Description { get; set; }

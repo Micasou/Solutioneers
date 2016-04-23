@@ -8,19 +8,9 @@ namespace Solutioneers.Models
 {
     public class VoteModels
     {
-        public class ProblemVoteModel
-        {
             [Key]
-            public virtual int PID { get; set; }
-            [Key]
-            public virtual int UID { get; set; }
-        }
-        public class SolutionVoteModel
-        {
-            [Key]
-            public virtual int SID { get; set; }
-            [Key]
-            public virtual int UID { get; set; }
-        }
+            public virtual int UID { get; set; } //User ID is attached to this, can only contain one.
+            public virtual Boolean upVote { get; set; } //If true user voted up, if not, user voted down
+        
     }
 }
