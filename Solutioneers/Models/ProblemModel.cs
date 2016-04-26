@@ -17,8 +17,10 @@ namespace Solutioneers.Models
         public virtual int UID { get; set; } //User ID, the one who posted it.
         [Key]
         public virtual int PID { get; set; } //Problem ID
+        public virtual int GID { get; set; } 
+        public virtual GroupModel Group { get; set; } //group that this problem is attached to  
         public virtual List<SolutionModel> Solutions { get; set; } //entity framework manages the foriegn keys for us
-        public virtual List<VoteModels> Votes { get; set; } //entity framework manages the foriegn keys for us
+        public virtual List<VoteModels.VoteProblem> Votes { get; set; } //entity framework manages the foriegn keys for us
         [MaxLength(100)]
         public string Title { get; set; }
         [MaxLength(255)]    // sets max length to 255

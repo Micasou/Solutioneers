@@ -17,7 +17,8 @@ namespace Solutioneers.Models
         public virtual int UID { get; set; } //User ID 
         [Key]
         public virtual int PID { get; set; } //Problem ID
-        public virtual List<VoteModels> Votes { get; set; }
+        public virtual ProblemModel Problem { get; set; }
+        public virtual List<VoteModels.VoteSolution> Votes { get; set; }
         [MaxLength(100)]
         public string Title { get; set; }
         [MaxLength(255)]    // sets max length to 255
