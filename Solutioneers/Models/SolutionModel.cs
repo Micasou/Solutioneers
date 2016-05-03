@@ -14,14 +14,15 @@ namespace Solutioneers.Models
         /// Please see here for additional info: "https://msdn.microsoft.com/en-us/data/jj591583.aspx".
         /// </summary>
         [Key]
-        public virtual int UID { get; set; } //User ID 
-        [Key]
-        public virtual int PID { get; set; } //Problem ID
-        public virtual ProblemModel Problem { get; set; }
-        public virtual List<VoteModels.VoteSolution> Votes { get; set; }
+        public int UID { get; set; } //User ID 
+        public int PID { get; set; } //Problem ID
+        public ProblemModel Problem { get; set; } //problem this solutioner is attached to
+
         [MaxLength(100)]
         public string Title { get; set; }
         [MaxLength(255)]    // sets max length to 255
         public string Description { get; set; }
+
+        public virtual ICollection<VoteModels.VoteSolution> Votes { get; set; }
     }
 }
