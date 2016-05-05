@@ -23,6 +23,6 @@ namespace Solutioneers.Models
         [MaxLength(255)]    // sets max length to 255
         public string Description { get; set; }
 
-        public virtual ICollection<VoteModels.VoteSolution> Votes { get; set; }
+        public virtual ICollection<ProblemVoteModel> Votes { get; set; }
     }
 }

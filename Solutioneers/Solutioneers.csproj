@@ -172,6 +172,10 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProblemModelsController.cs" />
+    <Compile Include="Controllers\ProblemVoteModelsController.cs" />
+    <Compile Include="Controllers\SolutionModelsController.cs" />
+    <Compile Include="Controllers\SolutionVoteModelsController.cs" />
     <Compile Include="DAL\VotingContext.cs" />
     <Compile Include="DAL\VotingInit.cs" />
     <Compile Include="Global.asax.cs">
@@ -184,8 +188,9 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\ProblemModel.cs" />
+    <Compile Include="Models\ProblemVoteModel.cs" />
     <Compile Include="Models\SolutionModel.cs" />
-    <Compile Include="Models\VoteModels.cs" />
+    <Compile Include="Models\SolutionVoteModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -250,6 +255,26 @@
     <Content Include="Views\GroupModels\Details.cshtml" />
     <Content Include="Views\GroupModels\Edit.cshtml" />
     <Content Include="Views\GroupModels\Index.cshtml" />
+    <Content Include="Views\ProblemModels\Create.cshtml" />
+    <Content Include="Views\ProblemModels\Delete.cshtml" />
+    <Content Include="Views\ProblemModels\Details.cshtml" />
+    <Content Include="Views\ProblemModels\Edit.cshtml" />
+    <Content Include="Views\ProblemModels\Index.cshtml" />
+    <Content Include="Views\SolutionModels\Create.cshtml" />
+    <Content Include="Views\SolutionModels\Delete.cshtml" />
+    <Content Include="Views\SolutionModels\Details.cshtml" />
+    <Content Include="Views\SolutionModels\Edit.cshtml" />
+    <Content Include="Views\SolutionModels\Index.cshtml" />
+    <Content Include="Views\SolutionVoteModels\Create.cshtml" />
+    <Content Include="Views\SolutionVoteModels\Delete.cshtml" />
+    <Content Include="Views\SolutionVoteModels\Details.cshtml" />
+    <Content Include="Views\SolutionVoteModels\Edit.cshtml" />
+    <Content Include="Views\SolutionVoteModels\Index.cshtml" />
+    <Content Include="Views\ProblemVoteModels\Create.cshtml" />
+    <Content Include="Views\ProblemVoteModels\Delete.cshtml" />
+    <Content Include="Views\ProblemVoteModels\Details.cshtml" />
+    <Content Include="Views\ProblemVoteModels\Edit.cshtml" />
+    <Content Include="Views\ProblemVoteModels\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

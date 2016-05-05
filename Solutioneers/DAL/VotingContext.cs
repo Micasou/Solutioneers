@@ -16,8 +16,8 @@ namespace Solutioneers.DAL
         public DbSet<GroupModel> Groups { get; set; }
         public DbSet<ProblemModel> Problems { get; set; }
         public DbSet<SolutionModel> Solutions { get; set; }
-        public DbSet<VoteModels.VoteProblem> ProblemVotes { get; set; }
-        public DbSet<VoteModels.VoteSolution> SolutionVotes { get; set; }
+        public DbSet<ProblemVoteModel> ProblemVotes { get; set; }
+        public DbSet<SolutionVoteModel> SolutionVotes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

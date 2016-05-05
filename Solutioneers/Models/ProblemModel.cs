@@ -26,7 +26,7 @@ namespace Solutioneers.Models
 
 
         public virtual ICollection<SolutionModel> Solutions { get; set; } //entity framework manages the foriegn keys for us
-        public virtual ICollection<VoteModels.VoteProblem> Votes { get; set; } //entity framework manages the foriegn keys for us
+        public virtual ICollection<SolutionVoteModel> Votes { get; set; } //entity framework manages the foriegn keys for us
 
     }
 }
