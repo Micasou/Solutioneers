@@ -11,8 +11,13 @@ namespace Solutioneers.Models
         [Key]
         public int ChannelID { get; set; } //Channel ID
         public int UserID { get; set; } //User ID that created the channel
-        public string Title { get; set; } // Title of the channel
-        public string Description { get; set; } //Description of types of problems + solutions that will be found here.
+
+        [Required]
+        [MaxLength(30)]
+        public string Title { get; set; }
+        [Required]
+        [MaxLength(255)]    // sets max length to 255
+        public string Description { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]

@@ -170,12 +170,23 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\ChannelsController.cs" />
+    <Compile Include="Controllers\ChannelVotesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProblemsController.cs" />
+    <Compile Include="Controllers\ProblemVotesController.cs" />
+    <Compile Include="Controllers\SolutionsController.cs" />
+    <Compile Include="Controllers\SolutionVotesController.cs" />
     <Compile Include="DAL\VotingContext.cs" />
     <Compile Include="DAL\VotingInit.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605172038171_ComplexDataModel.cs" />
+    <Compile Include="Migrations\201605172038171_ComplexDataModel.Designer.cs">
+      <DependentUpon>201605172038171_ComplexDataModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -198,8 +209,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-resource.js" />
+    <Content Include="Scripts\angular-resource.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-resource.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -247,6 +265,41 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Categories\Create.cshtml" />
+    <Content Include="Views\Categories\Delete.cshtml" />
+    <Content Include="Views\Categories\Details.cshtml" />
+    <Content Include="Views\Categories\Edit.cshtml" />
+    <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Channels\Create.cshtml" />
+    <Content Include="Views\Channels\Delete.cshtml" />
+    <Content Include="Views\Channels\Details.cshtml" />
+    <Content Include="Views\Channels\Edit.cshtml" />
+    <Content Include="Views\Channels\Index.cshtml" />
+    <Content Include="Views\Problems\Create.cshtml" />
+    <Content Include="Views\Problems\Delete.cshtml" />
+    <Content Include="Views\Problems\Details.cshtml" />
+    <Content Include="Views\Problems\Edit.cshtml" />
+    <Content Include="Views\Problems\Index.cshtml" />
+    <Content Include="Views\Solutions\Create.cshtml" />
+    <Content Include="Views\Solutions\Delete.cshtml" />
+    <Content Include="Views\Solutions\Details.cshtml" />
+    <Content Include="Views\Solutions\Edit.cshtml" />
+    <Content Include="Views\Solutions\Index.cshtml" />
+    <Content Include="Views\ProblemVotes\Create.cshtml" />
+    <Content Include="Views\ProblemVotes\Delete.cshtml" />
+    <Content Include="Views\ProblemVotes\Details.cshtml" />
+    <Content Include="Views\ProblemVotes\Edit.cshtml" />
+    <Content Include="Views\ProblemVotes\Index.cshtml" />
+    <Content Include="Views\SolutionVotes\Create.cshtml" />
+    <Content Include="Views\SolutionVotes\Delete.cshtml" />
+    <Content Include="Views\SolutionVotes\Details.cshtml" />
+    <Content Include="Views\SolutionVotes\Edit.cshtml" />
+    <Content Include="Views\SolutionVotes\Index.cshtml" />
+    <Content Include="Views\ChannelVotes\Create.cshtml" />
+    <Content Include="Views\ChannelVotes\Delete.cshtml" />
+    <Content Include="Views\ChannelVotes\Details.cshtml" />
+    <Content Include="Views\ChannelVotes\Edit.cshtml" />
+    <Content Include="Views\ChannelVotes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -258,6 +311,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201605172038171_ComplexDataModel.resx">
+      <DependentUpon>201605172038171_ComplexDataModel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

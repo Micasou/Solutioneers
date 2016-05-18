@@ -17,11 +17,13 @@ namespace Solutioneers.DAL
         public DbSet<Channel> Channels { get; set; }
         public DbSet<Problem> Problems { get; set; }
         public DbSet<Solution> Solutions { get; set; }
+        public DbSet<ChannelVote> ChannelVotes { get; set; }
         public DbSet<ProblemVote> ProblemVotes { get; set; }
         public DbSet<SolutionVote> SolutionVotes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //Link that explains the blow code http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             //Maps a many to many relationship
@@ -31,7 +33,8 @@ namespace Solutioneers.DAL
                 .MapRightKey("InstructorID")
                 .ToTable("CourseInstructor"));
 
-            modelBuilder.Entity<Problem>()
+          /* The below code is there to show the second way to establish relationships besides the hard coded models
+           *  modelBuilder.Entity<Problem>()
                     .HasRequired(s => s.Channel) // Problem entity requires Channel 
                     .WithMany(s => s.Problems); // Channel entity includes many Problem entities
 
@@ -50,6 +53,7 @@ namespace Solutioneers.DAL
             modelBuilder.Entity<SolutionVote>()
             .HasRequired(s => s.Solution) //Vote entity requires a problem
             .WithMany(s => s.Votes); //Problem entity has many votes
+            */
         }
     }
 }
