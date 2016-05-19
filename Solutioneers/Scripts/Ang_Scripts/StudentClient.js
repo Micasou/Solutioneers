@@ -1,7 +1,3 @@
 ﻿
-var StudentApp = angular.module("StudentApp", [])
+var StudentApp = angular.module("StudentApp", ['snapscroll'])
 
-StudentApp.controller('StudentController', function ($scope) {
-    $scope.AppName = "Solutioneers";
-    $scope.name = "default name";
-});

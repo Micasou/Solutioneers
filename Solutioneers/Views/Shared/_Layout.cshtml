@@ -16,7 +16,8 @@
 
 
 </head>
-<body ng-app="StudentApp" >
+<body ng-app="StudentApp">
+    <!-- following is the nav bar-->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -37,23 +38,24 @@
             </div>
         </div>
     </div>
-    <div ng-controller="StudentController">
-        <div class="container body-content">
-            @RenderBody()
-            <hr />
+        <div>
+            <div class="container body-content">
+                @RenderBody()
+                <hr />
 
-            <footer>
-
-
-                <p>&copy; @DateTime.Now.Year - {{AppName}}</p>
+                <footer>
 
 
-            </footer>
+                    <p>&copy; @DateTime.Now.Year - Solutioneers</p>
+
+
+                </footer>
+            </div>
         </div>
-    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/Ang_Scripts/angular-snapscroll.js")
     @RenderSection("scripts", required: false)
     </div>
 </body>
