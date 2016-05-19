@@ -1,3 +1,3 @@
 ﻿
-var StudentApp = angular.module("StudentApp", ['snapscroll'])
+var StudentApp = angular.module("StudentApp", ['snapscroll']);
 
