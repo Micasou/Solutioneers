@@ -351,8 +351,12 @@
                           return snapIndex >= scope.snapIndexMin() && snapIndex <= scope.scopeIndexMax();
                       };
 
-                      
-                      element.css('overflowY', 'auto');
+                      //the overflowY attribute was initially 'auto'
+                      element.css('overflowY', 'hidden');
+
+                      //added the following line in order to 
+                      //hide horizontal scrolling in snap sections
+                      element.css('overflowX', 'hidden');
 
                       watchSnapHeight(scope, function () {
                           var snaps = element.children();
