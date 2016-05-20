@@ -153,8 +153,9 @@ namespace Solutioneers.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email,
                     Email = model.Email,
-                    MyUserInfo = new MyUserInfo { BirthDate = model.BirthDate }
-                    };
+                    BirthDate = model.BirthDate,
+                    PrimaryRole = model.PrimaryRole 
+                };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

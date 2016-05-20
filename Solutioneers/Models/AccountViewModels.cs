@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System;
+using Solutioneers.Enums;
+
 namespace Solutioneers.Models
 {
     public class ExternalLoginConfirmationViewModel
@@ -80,7 +82,15 @@ namespace Solutioneers.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
+        [Required]
+        [Display(Name = "Primary Role")]
+        public PrimaryRoles PrimaryRole { get; set; }
+
+        [Required]
+        [Display(Name = "Birthday Date")]
         public DateTime BirthDate { get; set; }
+
+
     }
 
     public class ResetPasswordViewModel

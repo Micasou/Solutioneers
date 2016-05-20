@@ -175,12 +175,15 @@
     <Compile Include="Controllers\ChannelVotesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Models\MyUserInfo.cs" />
     <Compile Include="Controllers\ProblemsController.cs" />
     <Compile Include="Controllers\ProblemVotesController.cs" />
     <Compile Include="Controllers\SolutionsController.cs" />
     <Compile Include="Controllers\SolutionVotesController.cs" />
     <Compile Include="DAL\VotingContext.cs" />
     <Compile Include="DAL\VotingInit.cs" />
+    <Compile Include="Enums\SecondaryRoles.cs" />
+    <Compile Include="Enums\PrimaryRoles.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -303,7 +306,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
