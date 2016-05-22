@@ -16,7 +16,9 @@ namespace Solutioneers.Models
         /// </summary>
         [Key]
         public int SolutionID { get; set; }
-        public int UserID { get; set; } //User ID 
+
+        public int UserID { get; set; } //User ID
+        public virtual ApplicationUser ApplicationUser { get; set; }
 
         [ForeignKey("Problem")]//foriegn key must be same name as the virtual type
         public int? ProblemID { get; set; } //Problem ID ### the ? indicates this foriegn ID is nullable

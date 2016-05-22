@@ -10,7 +10,9 @@ namespace Solutioneers.Models
     {
         [Key]
         public int ChannelID { get; set; } //Channel ID
+
         public int UserID { get; set; } //User ID that created the channel
+        public virtual ApplicationUser ApplicationUser { get; set; }
 
         [Required]
         [MaxLength(30)]

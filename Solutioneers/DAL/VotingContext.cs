@@ -25,7 +25,7 @@ namespace Solutioneers.DAL
         {
             //Link that explains the blow code http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-
+            /*
             //Maps a many to many relationship
             modelBuilder.Entity<Category>()
             .HasMany(c => c.Channels).WithMany(i => i.Categories)
@@ -33,7 +33,7 @@ namespace Solutioneers.DAL
                 .MapRightKey("InstructorID")
                 .ToTable("CourseInstructor"));
 
-          /* The below code is there to show the second way to establish relationships besides the hard coded models
+           The below code is there to show the second way to establish relationships besides the hard coded models
            *  modelBuilder.Entity<Problem>()
                     .HasRequired(s => s.Channel) // Problem entity requires Channel 
                     .WithMany(s => s.Problems); // Channel entity includes many Problem entities

@@ -11,7 +11,10 @@ namespace Solutioneers.Models
     {
             [Key]
             public int  VoteID { get; set;}
+
             public int UserID { get; set; } //User ID is attached to this, can only contain one
+            public virtual ApplicationUser ApplicationUser { get; set; }
+
             public bool upVote { get; set; } //If true user voted up, if not, user voted down
 
             [DataType(DataType.Date)]
