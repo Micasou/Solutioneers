@@ -1,24 +1,264 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/* ------------------------------ Universal Classes ------------------------------ */
+
+body {
+    padding-top: 63px;
+    background-color: #f0f1f2;
+    font-family: 'Rubik';
+    font-weight: 400;
+    color: #353838;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.float-left {
+    float: left;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
+.float-right {
+    float: right;
+}
+
+.notification-bubble {
+    padding:2px;
+    text-align:center;
+    color:#fff;
+    font-size:9px;
+    width:9px;
+    height:9px;
+    background-color: #5fa6d1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* image frame
 */
-.dl-horizontal dt {
-    white-space: normal;
+.frame-size-small {
+    height: 36px;
+    width: 36px;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.frame {
+    display: inline-block;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    position: relative;
+}
+
+.frame img {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.frame-circle, .frame-circle > img {
+    vertical-align:middle;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* Font Formats
+*/
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 9px;
+    font-weight: 400;
+}
+
+p {
+    color: #626576;
+}
+
+/* Button Formatting
+*/
+
+.btn {
+    padding:9px 18px;
+
+}
+
+.btn-link {
+    padding: 0px 0px 0px 9px;
+}
+
+/* Card Styling
+*/
+
+.well {
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Flexbox Setup
+*/
+
+.container {
+    max-width:998px;
+    margin:auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:9px;
+    box-sizing:border-box;
+}
+
+.column-20, .column-33, .column-66, .column-80 {
+    padding:9px;
+}
+
+.row .column-33 {
+  -webkit-flex: 1 1 calc(100% / 3);
+      -ms-flex: 1 1 calc(100% / 3);
+          flex: 1 1 calc(100% / 3);
+  box-sizing: border-box;
+
+}
+
+.row  .column-66 {
+  -webkit-flex: 1 1 calc(200% / 3);
+      -ms-flex: 1 1 calc(200% / 3);
+          flex: 1 1 calc(200% / 3);
+  box-sizing: border-box;
+}
+
+.row .column-33 {
+  max-width: calc(100% / 3);
+  max-height: 100%;
+}
+
+.row  .column-66 {
+  max-width: calc(200% / 3);
+  max-height: 100%;
+}
+
+.row .column-20 {
+  -webkit-flex: 1 1 20%;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+  box-sizing: border-box;
+
+}
+
+.row  .column-80 {
+  -webkit-flex: 1 1 80%;
+      -ms-flex: 1 1 80%;
+          flex: 1 1 80%;
+  box-sizing: border-box;
+}
+
+.row .column-20 {
+  max-width: 20%;
+  max-height: 100%;
+}
+
+.row  .column-80 {
+  max-width: 80%;
+  max-height: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.row-33 {
+  max-width: 100%;
+  max-height: calc(100% / 3);
+}
+
+.row-66 {
+  max-width: 100%;
+  max-height: calc(200% / 3);
+}
+
+.wrap-group {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.wrap-group-item {
+    width: 30%;
+    max-height: 100%;
+    box-sizing: border-box;
+    margin-bottom:9px;
+}
+
+section {
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    width:100% !important;
+}
+
+section:first-child {
+    box-shadow: 0px -2px 2px #eee inset;
+}
+
+/* ------------------------------ Main Site ------------------------------ */
+
+/* Fixed Navigation Bar
+*/
+#nav-top {
+    position: fixed;
+    top: 0px;
+    height: 45px;
+    width:100%;
+    background: #fff;
+}
+
+#nav-top .row {
+    height: 45px;
+    margin:0px 9px;
+    padding:0px;
+    align-items:center;
+}
+
+.notifications {
+    justify-content: space-around;
+}
+
+/* Subscription List
+*/
+.subscription-list {
+    align-items:center;
+    padding:4px;
+    margin-bottom:2px;
 }
