@@ -175,13 +175,13 @@
     <Compile Include="Controllers\ChannelVotesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Models\MyUserInfo.cs" />
     <Compile Include="Controllers\ProblemsController.cs" />
     <Compile Include="Controllers\ProblemVotesController.cs" />
     <Compile Include="Controllers\SolutionsController.cs" />
     <Compile Include="Controllers\SolutionVotesController.cs" />
     <Compile Include="DAL\VotingContext.cs" />
     <Compile Include="DAL\VotingInit.cs" />
+    <Compile Include="Enums\FileType.cs" />
     <Compile Include="Enums\SecondaryRoles.cs" />
     <Compile Include="Enums\PrimaryRoles.cs" />
     <Compile Include="Global.asax.cs">
@@ -195,6 +195,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Channel.cs" />
+    <Compile Include="Models\File.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Problem.cs" />

@@ -182,3 +182,4 @@ C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.S
 C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.Migrations.ComplexDataModel.resources
 C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csproj.GenerateResource.Cache
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csprojResolveAssemblyReference.cache
