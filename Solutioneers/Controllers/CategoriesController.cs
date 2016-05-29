@@ -39,12 +39,12 @@ namespace Solutioneers.Controllers
             CategoryToChannel returnView = new CategoryToChannel(category, Channels);
             if (returnView.Channels != null)
             { 
-                foreach (ObjectVoteCounting channel in returnView.Channels)
+                foreach (ChannelVoteCounting channelViewObject in returnView.Channels)
                 {
-                    channel.numOfVotes = ((Channel)channel).Votes.Count;
+                    channelViewObject.numOfVotes = channelViewObject.CastThis.Votes.Count;
                 }
             }
-            return View(category);
+            return View(returnView);
         }
 
         // GET: Categories/Create
