@@ -1,14 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
-<head> 
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Solutioneers</title>
+
+
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Scripts/angular.js")
+    @Scripts.Render("~/Scripts/Ang_Scripts/StudentClient.js")
+
+
+
 
 </head>
-<body>
+<body ng-app="StudentApp">
+    <!-- following is the nav bar-->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -29,16 +38,20 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+
+    <div class="container body-content" snapscroll style="height: 88vh">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Solutioneers</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - Solutioneers</p>
+    </footer>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/Ang_Scripts/angular-snapscroll.js")
     @RenderSection("scripts", required: false)
+    </div>
 </body>
 </html>

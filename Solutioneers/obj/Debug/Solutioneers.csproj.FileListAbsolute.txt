@@ -120,8 +120,6 @@ C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\M
 C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\obj\Debug\Solutioneers.dll
 C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\obj\Debug\Solutioneers.pdb
 C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csprojResolveAssemblyReference.cache
-C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.dll
-C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.pdb
 C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Solutioneers.dll.config
 C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Solutioneers.dll
 C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Solutioneers.pdb
@@ -180,6 +178,6 @@ C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.S
 C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.Migrations.ComplexDataModel.resources
-C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csproj.GenerateResource.Cache
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.pdb
 C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csprojResolveAssemblyReference.cache

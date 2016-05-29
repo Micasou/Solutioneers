@@ -36,7 +36,7 @@ namespace Solutioneers.Models
         [Display(Name = "Day Job")]
         public string DayJob;
 
-        [StringLength(556)]
+        [StringLength(564)]
         public string Bio;
 
         [Display(Name = "Full Name")]

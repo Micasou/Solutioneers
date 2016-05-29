@@ -1,4 +1,5 @@
-﻿using Solutioneers.Models;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using Solutioneers.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -25,6 +26,10 @@ namespace Solutioneers.DAL
         {
             //Link that explains the blow code http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-a-more-complex-data-model-for-an-asp-net-mvc-application
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
+            modelBuilder.Entity<IdentityUserLogin>().HasKey<string>(l => l.UserId);
+            modelBuilder.Entity<IdentityRole>().HasKey<string>(r => r.Id);
+            modelBuilder.Entity<IdentityUserRole>().HasKey(r => new { r.RoleId, r.UserId });
             /*
             //Maps a many to many relationship
             modelBuilder.Entity<Category>()

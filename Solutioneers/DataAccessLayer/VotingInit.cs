@@ -6,7 +6,7 @@ using Solutioneers.Models;
 
 namespace Solutioneers.DAL
 {
-    public class VotingInit : System.Data.Entity.DropCreateDatabaseIfModelChanges<VotingContext>
+    public class VotingInit : System.Data.Entity.DropCreateDatabaseAlways<VotingContext>
     {
         protected override void Seed(VotingContext context)
         {
