@@ -196,6 +196,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Problem.cs" />
     <Compile Include="Models\ProblemVote.cs" />
+    <Compile Include="Models\RoutingViewModels.cs" />
     <Compile Include="Models\Solution.cs" />
     <Compile Include="Models\ChannelVote.cs" />
     <Compile Include="Models\SolutionVote.cs" />

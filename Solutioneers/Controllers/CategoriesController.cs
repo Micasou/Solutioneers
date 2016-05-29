@@ -30,9 +30,19 @@ namespace Solutioneers.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Category category = await db.Categories.FindAsync(id);
+
             if (category == null)
             {
                 return HttpNotFound();
+            }
+            ICollection<Channel> Channels = category.Channels;
+            CategoryToChannel returnView = new CategoryToChannel(category, Channels);
+            if (returnView.Channels != null)
+            { 
+                foreach (ObjectVoteCounting channel in returnView.Channels)
+                {
+                    channel.numOfVotes = ((Channel)channel).Votes.Count;
+                }
             }
             return View(category);
         }

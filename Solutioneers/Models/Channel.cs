@@ -31,5 +31,10 @@ namespace Solutioneers.Models
         public virtual ICollection<ChannelVote> Votes { get; set; }
         public virtual ICollection<Solution> Solutions { get; set; } //entity framework manages the foriegn keys for us all solututions in the channel 
         public virtual ICollection<Problem> Problems { get; set; } //all problems in the channel
+
+        public static explicit operator Channel(ObjectVoteCounting v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
