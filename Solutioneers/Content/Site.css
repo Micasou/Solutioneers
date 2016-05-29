@@ -1,7 +1,7 @@
 ﻿/* ------------------------------ Universal Classes ------------------------------ */
 
 body {
-    padding-top: 63px;
+    padding-top: 45px;
     background-color: #f0f1f2;
     font-family: 'Rubik';
     font-weight: 400;
@@ -86,10 +86,27 @@ body {
     text-align: justify;
 }
 
+.indent {
+    margin-left:9px;
+}
+
+h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight:500;
+    color:#5fa6d1;
+    margin-left:9px;
+}
+
 h2 {
     font-size: 18px;
     margin-bottom: 18px;
     font-weight: 400;
+    margin-top:18px;
+    margin-left:9px;
+    text-transform: uppercase;
+    font-weight:500;
+    color:#5fa6d1;
 }
 
 h3 {
@@ -106,21 +123,67 @@ p {
 */
 
 .btn {
+    display:block;
     padding:9px 18px;
-
+    cursor: pointer;
 }
 
 .btn-link {
+    color:#5fa6d1;
     padding: 0px 0px 0px 9px;
+}
+
+.btn-link:hover {
+    text-decoration:underline;
+    color: #353838;
+}
+
+.disabled:hover {
+    text-decoration:none;
+    color: #ddd;
+}
+
+.btn-primary {
+    color: #fff;
+    background: #5fa6d1;
+    margin:9px 9px;
+    padding: 9px 18px;
+    border-radius: 5px;
+    border: 1px solid #dceaf2;
+}
+
+.disabled {
+    color:#ddd;
 }
 
 /* Card Styling
 */
 
 .well {
+    margin:9px 0px;
+    padding: 9px 18px;
     border-radius: 5px;
     background-color: #fff;
+    border: 1px solid #dceaf2;
 }
+
+.shadow-bottom {
+  position: relative; /* to position pseudo absolute*/
+  overflow: hidden; /* to cut of overflow shadow*/	
+  height:9px;
+}
+
+.shadow-bottom:after{
+  content: "\0020";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px; /* when 0 no shadow is displayed*/
+  box-shadow: #696c5c 0 0 8px 0;
+}
+
+.shadow-bottom:before { top: -1px} /* because of height: 1*/
+.shadow-bottom:after { bottom: -1px}  /* because of height: 1*/
 
 /* Flexbox Setup
 */
@@ -134,8 +197,11 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding:9px;
     box-sizing:border-box;
+}
+
+.row-centered {
+    align-items:center;
 }
 
 .column-20, .column-33, .column-66, .column-80 {
@@ -227,11 +293,6 @@ section {
     padding-bottom:0px !important;
     width:100% !important;
 }
-
-section:first-child {
-    box-shadow: 0px -2px 2px #eee inset;
-}
-
 /* ------------------------------ Main Site ------------------------------ */
 
 /* Fixed Navigation Bar
@@ -244,6 +305,17 @@ section:first-child {
     background: #fff;
 }
 
+#nav-top .logo {
+    height:18px;
+    width: 300px;
+    overflow:hidden;
+    justify-content:flex-start;
+}
+#nav-top .logo > img {
+    height:18px;
+    width:auto;
+}
+
 #nav-top .row {
     height: 45px;
     margin:0px 9px;
@@ -252,13 +324,109 @@ section:first-child {
 }
 
 .notifications {
+    align-self:baseline;
     justify-content: space-around;
 }
 
-/* Subscription List
+.userbar {
+    width: 300px;
+    overflow:hidden;
+    justify-content:flex-end;
+}
+
+/* Activity Page / Splash Page
 */
-.subscription-list {
+.activity-list {
+    background-color: #f5f6f7;
+    border-right: 1px solid #dceaf2;
+}
+
+.activity-list .row {
+    align-items: center;
+    padding: 4px 9px;
+    cursor: pointer;
+}
+
+.activity-list .row:hover {
+    background-color: #e4ebf0;
+}
+
+.activity-board {
+    background-color: #fcfcfc;
+}
+
+.activity-list a {
+    margin-bottom:9px;
+}
+
+/* browse channels */
+.browse-catagories {
+    border-left:1px solid #dceaf2;
+}
+
+.browse results {
+    width:100%;
+}
+
+/* Messenger List
+*/
+.message-list {
+    background-color: #f5f6f7;
+    border-right: 1px solid #dceaf2;
+}
+
+.message-list .row {
+    align-items: center;
+    padding: 4px 9px;
+    cursor: pointer;
+}
+
+.message-list .row:hover {
+    background-color: #e4ebf0;
+}
+
+.frame-messages {
+    min-width:36px;
+    margin-top:27px;
+    margin-right:9px;
+}
+
+.message-board {
+    background-color: #fcfcfc;
+}
+
+.message-conversation {
+    overflow: scroll;
+    height:70vh;
+}
+
+.message-list h2 {
+    margin-top:18px;
+    margin-left:9px;
+    text-transform: uppercase;
+    font-weight:500;
+    color:#5fa6d1;
+}
+
+.message-header {
+    border-bottom:1px solid #dceaf2;
+    padding-top:18px;
+    padding-bottom:9px;
+}
+
+.message-header, .message-header > .row {
     align-items:center;
-    padding:4px;
-    margin-bottom:2px;
+}
+
+.message-sent {
+    align-self:flex-end;
+}
+
+.message-input {
+    width: 100%;
+    margin:9px 0px;
+    padding: 9px 18px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #dceaf2;
 }

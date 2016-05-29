@@ -192,6 +192,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\logo.png" />
     <Content Include="Content\reset.css" />
     <Content Include="Content\responsive.css" />
     <Content Include="Content\rubikfont.css" />
@@ -254,6 +255,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Messenger\Messenger.cshtml" />
+    <Content Include="Views\Channels\Channels.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

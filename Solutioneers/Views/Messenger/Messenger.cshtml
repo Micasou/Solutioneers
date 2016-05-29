@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Messenger";
+}
+
+<div class="row">
+    <!-- messages -->
+    <div class="column-20 message-list">
+        <h2>Messages</h2>
+        <!-- repeat this -->
+        <div class="row">
+            <div class="frame frame-size-small frame-circle">
+                <img src="http://lorempixel.com/36/36/cats" />
+            </div>
+            <p>Person 1</p>
+            <i class="notification-bubble">2</i>
+        </div>
+        <div class="row">
+            <div class="frame frame-size-small frame-circle">
+                <img src="http://lorempixel.com/36/36/cats" />
+            </div>
+            <p>Person 2</p>
+            <i class="notification-bubble">2</i>
+        </div>
+        <div class="row">
+            <div class="frame frame-size-small frame-circle">
+                <img src="http://lorempixel.com/36/36/cats" />
+            </div>
+            <p>Person 3</p>
+            <i class="notification-bubble">2</i>
+        </div>
+    </div>
+    <!-- Notifications -->
+    <div class="message-board column-80">
+        <div class="row message-header">
+            <div class="row">
+                <div class="frame frame-size-small frame-circle">
+                    <img src="http://lorempixel.com/36/36/cats" />
+                </div>
+                <h1>Person 1</h1>
+            </div>
+            <i>information dropdown</i>
+        </div>
+        <div class="column message-conversation">
+            <div class="column-66 message-received">
+                <div class="row">
+                    <div class="frame frame-size-small frame-circle frame-messages">
+                        <img src="http://lorempixel.com/36/36/cats" />
+                    </div>
+                    <div>
+                        <div class="row">
+                            <p class="indent">Person 1</p>
+                            <p>FRI 9:32AM</p>
+                        </div>
+                        <div class="row well">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column-66 message-sent">
+                <div class="row">
+                    <p class="indent">Person 1</p>
+                    <p>FRI 9:32AM</p>
+                </div>
+                <div class="row well">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <input class="message-input" type="text" />
+            <a class="btn btn-primary">send</a>
+        </div>
+    </div>
+</div>

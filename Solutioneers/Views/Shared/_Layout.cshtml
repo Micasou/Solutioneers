@@ -19,26 +19,28 @@
 <body ng-app="StudentApp">
     <!-- following is the nav bar-->
     <div id="nav-top">
-        <div class="container">
-            <div class="row">
-                <div class="logo">
-                    @Html.ActionLink("Solutioneers", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        <div class="row">
+            <div class="logo row">
+                <img src="~/img/logo.png" />
+                <div class="breadcrumb">
+                    <span class="pull-left" style="font-weight:400; font-size:14px;">&nbsp;/ CHANNELS</span>
+                    <span class="pull-left" style="color: #5fa6d1; font-weight:400; font-size:14px;">/ Solutioneers</span>
                 </div>
-                <div class="notifications row">
-                    <a class="btn btn-link">Channels</a>
-                    <a class="btn btn-link">Messages</a>
-                </div>
-                <div class="userbar">
-                    <a class="btn btn-link">Username</a>
-                    <div class="frame frame-circle frame-size-small">
-                        <img src="http://lorempixel.com/36/36/cats" />
-                    </div>
+            </div>
+            <div class="notifications row">
+                <a class="btn btn-link">Channels</a>
+                <a class="btn btn-link">Messages</a>
+            </div>
+            <div class="userbar row">
+                <a class="btn btn-link">Username</a>
+                <div class="frame frame-circle frame-size-small">
+                    <img src="http://lorempixel.com/36/36/cats" />
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container" snapscroll style="height: 88vh">
+    <div snapscroll style="height: 88vh">
         @RenderBody()
     </div>
 
