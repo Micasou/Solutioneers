@@ -35,8 +35,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Channel.Categories, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor<>(model => model.Channel.Categories)
-                @Html.ValidationMessageFor(model => model.Channel.Categories, "", new { @class = "text-danger" })
+                @Html.DropDownListFor(model => model.Category,Model.Categories,"Please Select Category Channel is Attached to", new { @class = "form-control" })
             </div>
         </div>
 

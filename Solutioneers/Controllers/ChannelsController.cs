@@ -38,9 +38,20 @@ namespace Solutioneers.Controllers
         }
 
         // GET: Channels/Create
-        public ActionResult Create(Category theCategory)
+        public async Task<ActionResult> Create(Category theCategory)
         {
-            return View(theCategory);
+            if (theCategory == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CreateChannelFromCategory temp = new CreateChannelFromCategory();
+            temp.Category = await db.Categories.FindAsync(theCategory.CategoryID);
+            temp.Categories = await db.Categories.ToListAsync();
+            if (temp.Category == null || temp.Categories == null)
+            {
+                return HttpNotFound();
+            }
+            return View(temp);
         }
 
         // POST: Channels/Create

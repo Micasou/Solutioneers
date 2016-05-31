@@ -96,7 +96,8 @@ namespace Solutioneers.Models
     public class CreateChannelFromCategory
     {
         public Channel Channel { get; set; }
-        public Category Category { get; set; }
+        public Category Category { get; set; }//the returned category
+        public ICollection<Category> Categories { get; set; } //the other 2 potential categories
 
     }
     
