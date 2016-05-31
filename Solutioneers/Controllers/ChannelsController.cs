@@ -38,9 +38,20 @@ namespace Solutioneers.Controllers
         }
 
         // GET: Channels/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Create(Category theCategory)
         {
-            return View();
+            if (theCategory == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CreateChannelFromCategory temp = new CreateChannelFromCategory();
+            temp.Category = await db.Categories.FindAsync(theCategory.CategoryID);
+            temp.Categories = await db.Categories.ToListAsync();
+            if (temp.Category == null || temp.Categories == null)
+            {
+                return HttpNotFound();
+            }
+            return View(temp);
         }
 
         // POST: Channels/Create
@@ -48,7 +59,7 @@ namespace Solutioneers.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "ChannelID,UserID,Title,Description,CreationDate")] Channel channel)
+        public async Task<ActionResult> Create([Bind(Include = "ChannelID,UserID,Title,Description,CreationDate")] Channel channel,Category theCategory, int UID)
         {
             if (ModelState.IsValid)
             {
