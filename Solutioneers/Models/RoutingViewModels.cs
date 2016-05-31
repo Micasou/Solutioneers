@@ -92,6 +92,12 @@ namespace Solutioneers.Models
                 Solution = new Solution();
                 Channel = theChannel;
             }
+        }
+    public class CreateChannelFromCategory
+    {
+        public Channel Channel { get; set; }
+        public Category Category { get; set; }
+
     }
     
 }
