@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Solutioneers</title>
 
-
-
+    <!--begin fullpage dependencies-->
+    @Styles.Render("~/Content/jquery.fullPage.css")
+    @Styles.Render("~/Content/headersheet.css")
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+    @Scripts.Render("~/Scripts/SnapScr/jquery.min.js")
+    @Scripts.Render("~/Scripts/SnapScr/jquery-ui.min.js")
+    @Scripts.Render("~/Scripts/SnapScr/jquery.fullPage.js")
+    @Scripts.Render("~/Scripts/SnapScr/examples.js")
+    @Scripts.Render("~/Scripts/SnapScr/FullPageConfig.js")
+    <!--end fullpage dependancies-->
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/Scripts/angular.js")
-    @Scripts.Render("~/Scripts/Ang_Scripts/StudentClient.js")
+
 
 
 
 
 </head>
-<body ng-app="StudentApp">
+<body>
     <!-- following is the nav bar-->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -39,19 +50,21 @@
         </div>
     </div>
 
-    <div class="container body-content" snapscroll style="height: 88vh">
+    <div class="container body-content" style="height: 80vh"> <!--1. We need to make this 30vh a variable that will change based on screen size. responsive stuff dawgs
+                                                                             2. we need to be able to scroll down if the row is larger than alloted size.
+                                                                             3. We need a preview of the bottom snap shop
+                                                                             -->
         @RenderBody()
     </div>
 
-    <footer>
+    <footer id="footer">
         <p>&copy; @DateTime.Now.Year - Solutioneers</p>
     </footer>
+    
 
-
-    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/Scripts/Ang_Scripts/angular-snapscroll.js")
+
     @RenderSection("scripts", required: false)
-    </div>
+
 </body>
 </html>

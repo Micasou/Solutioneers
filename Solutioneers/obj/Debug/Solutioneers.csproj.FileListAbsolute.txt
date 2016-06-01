@@ -1,61 +1,244 @@
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Solutioneers.dll.config
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Solutioneers.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Solutioneers.pdb
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Antlr3.Runtime.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\EntityFramework.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\EntityFramework.SqlServer.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Newtonsoft.Json.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Owin.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Net.Http.Formatting.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Helpers.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Http.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Http.WebHost.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Mvc.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Optimization.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Razor.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.WebPages.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.WebPages.Razor.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\WebGrease.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Helpers.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Mvc.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Optimization.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Razor.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.WebPages.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.WebPages.Razor.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Antlr3.Runtime.pdb
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Newtonsoft.Json.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Net.Http.Formatting.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Http.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\System.Web.Http.WebHost.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\EntityFramework.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\EntityFramework.SqlServer.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\obj\Debug\Solutioneers.csprojResolveAssemblyReference.cache
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\obj\Debug\Solutioneers.dll
-C:\Users\Tarik\Source\Repos\SolutioneersTest\Solutioneers\obj\Debug\Solutioneers.pdb
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Solutioneers.dll.config
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Solutioneers.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Solutioneers.pdb
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Antlr3.Runtime.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\EntityFramework.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\EntityFramework.SqlServer.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Google.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Web.Infrastructure.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Newtonsoft.Json.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Owin.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Net.Http.Formatting.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Helpers.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Http.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Http.WebHost.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Mvc.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Optimization.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Razor.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.WebPages.Deployment.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.WebPages.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.WebPages.Razor.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\WebGrease.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Helpers.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Mvc.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Optimization.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Razor.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.WebPages.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.WebPages.Deployment.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.WebPages.Razor.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Antlr3.Runtime.pdb
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Newtonsoft.Json.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Net.Http.Formatting.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Http.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\System.Web.Http.WebHost.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\EntityFramework.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\EntityFramework.SqlServer.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Google.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csprojResolveAssemblyReference.cache
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\obj\Debug\Solutioneers.dll
+c:\users\shikari\documents\visual studio 2013\Projects\Solutioneers\Solutioneers\obj\Debug\Solutioneers.pdb
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Solutioneers.dll.config
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Solutioneers.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Solutioneers.pdb
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Antlr3.Runtime.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\EntityFramework.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\EntityFramework.SqlServer.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Newtonsoft.Json.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Owin.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Net.Http.Formatting.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Helpers.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Http.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Http.WebHost.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Mvc.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Optimization.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Razor.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.WebPages.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.WebPages.Razor.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\WebGrease.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Helpers.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Mvc.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Optimization.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Razor.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.WebPages.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.WebPages.Razor.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Antlr3.Runtime.pdb
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Newtonsoft.Json.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Net.Http.Formatting.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Http.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\System.Web.Http.WebHost.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\EntityFramework.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\EntityFramework.SqlServer.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\obj\Debug\Solutioneers.dll
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\obj\Debug\Solutioneers.pdb
+C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csprojResolveAssemblyReference.cache
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Solutioneers.dll.config
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Solutioneers.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Solutioneers.pdb
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Antlr3.Runtime.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\EntityFramework.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\EntityFramework.SqlServer.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Newtonsoft.Json.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Owin.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Net.Http.Formatting.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Helpers.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Http.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Http.WebHost.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Mvc.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Optimization.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Razor.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.WebPages.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.WebPages.Razor.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\WebGrease.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Helpers.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Mvc.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Optimization.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Razor.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.WebPages.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.WebPages.Razor.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Antlr3.Runtime.pdb
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Newtonsoft.Json.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Net.Http.Formatting.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Http.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\System.Web.Http.WebHost.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\EntityFramework.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\EntityFramework.SqlServer.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.dll
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.pdb
+C:\Users\Shikari\Documents\GitHub\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csprojResolveAssemblyReference.cache
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Solutioneers.dll.config
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Solutioneers.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Solutioneers.pdb
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Antlr3.Runtime.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\EntityFramework.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\EntityFramework.SqlServer.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Newtonsoft.Json.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Owin.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Net.Http.Formatting.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Helpers.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Http.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Http.WebHost.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Mvc.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Optimization.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Razor.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.WebPages.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\WebGrease.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Helpers.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Mvc.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Optimization.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Razor.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.WebPages.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Antlr3.Runtime.pdb
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Newtonsoft.Json.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Net.Http.Formatting.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Http.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\System.Web.Http.WebHost.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\EntityFramework.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\EntityFramework.SqlServer.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csprojResolveAssemblyReference.cache
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\obj\Debug\Solutioneers.dll
+C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\obj\Debug\Solutioneers.pdb

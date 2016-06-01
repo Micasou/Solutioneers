@@ -13,9 +13,14 @@ namespace Solutioneers.Models
     {
         [Key]
         public int CategoryID { get; set; } //Group ID
-        public string Title { get; set; } // Title of the group
-        public string Description { get; set; } //Description of types of problems + solutions that will be found here.
- 
+
+        [Required]
+        [MaxLength(30)]
+        public string Title { get; set; }
+        [Required]
+        [MaxLength(255)]    // sets max length to 255
+        public string Description { get; set; }
+
         public virtual ICollection<Channel> Channels { get; set; } //entity framework manages the foriegn keys for us
     }
 }
