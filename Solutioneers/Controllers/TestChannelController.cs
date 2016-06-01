@@ -12,113 +12,112 @@ using Solutioneers.Models;
 
 namespace Solutioneers.Controllers
 {
-    public class ProblemsController : Controller
+    public class TestChannelController : Controller
     {
         private VotingContext db = new VotingContext();
 
-        // GET: Problems
+        // GET: TestChannel
         public async Task<ActionResult> Index()
         {
-            var problems = db.Problems.Include(p => p.Channel);
-            return View(await problems.ToListAsync());
+            var channels = db.Channels.Include(c => c.Category);
+            return View(await channels.ToListAsync());
         }
 
-        // GET: Problems/Details/5
+        // GET: TestChannel/Details/5
         public async Task<ActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Problem problem = await db.Problems.FindAsync(id);
-            if (problem == null)
+            Channel channel = await db.Channels.FindAsync(id);
+            if (channel == null)
             {
                 return HttpNotFound();
             }
-            return View(problem);
+            return View(channel);
         }
 
-        // GET: Problems/Create
+        // GET: TestChannel/Create
         public ActionResult Create()
         {
-            ViewBag.ChannelID = new SelectList(db.Channels, "Channel", "Title");
+            ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Title");
             return View();
         }
 
-        // POST: Problems/Create
+        // POST: TestChannel/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "ProblemID,UserID,ChannelID,Title,Description")] Problem problem)
+        public async Task<ActionResult> Create([Bind(Include = "ChannelID,CategoryID,UserID,Title,Description,CreationDate")] Channel channel)
         {
             if (ModelState.IsValid)
             {
-                problem.CreationDate = DateTime.Today; 
-                db.Problems.Add(problem);
+                db.Channels.Add(channel);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.ChannelID = new SelectList(db.Channels, "ChannelID", "Title", problem.ChannelID);
-            return View(problem);
+            ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Title", channel.CategoryID);
+            return View(channel);
         }
 
-        // GET: Problems/Edit/5
+        // GET: TestChannel/Edit/5
         public async Task<ActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Problem problem = await db.Problems.FindAsync(id);
-            if (problem == null)
+            Channel channel = await db.Channels.FindAsync(id);
+            if (channel == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.ChannelID = new SelectList(db.Channels, "ChannelID", "Title", problem.ChannelID);
-            return View(problem);
+            ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Title", channel.CategoryID);
+            return View(channel);
         }
 
-        // POST: Problems/Edit/5
+        // POST: TestChannel/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "ProblemID,UserID,ChannelID,Title,Description")] Problem problem)
+        public async Task<ActionResult> Edit([Bind(Include = "ChannelID,CategoryID,UserID,Title,Description,CreationDate")] Channel channel)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(problem).State = EntityState.Modified;
+                db.Entry(channel).State = EntityState.Modified;
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            ViewBag.ChannelID = new SelectList(db.Channels, "ChannelID", "Title", problem.ChannelID);
-            return View(problem);
+            ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Title", channel.CategoryID);
+            return View(channel);
         }
 
-        // GET: Problems/Delete/5
+        // GET: TestChannel/Delete/5
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Problem problem = await db.Problems.FindAsync(id);
-            if (problem == null)
+            Channel channel = await db.Channels.FindAsync(id);
+            if (channel == null)
             {
                 return HttpNotFound();
             }
-            return View(problem);
+            return View(channel);
         }
 
-        // POST: Problems/Delete/5
+        // POST: TestChannel/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            Problem problem = await db.Problems.FindAsync(id);
-            db.Problems.Remove(problem);
+            Channel channel = await db.Channels.FindAsync(id);
+            db.Channels.Remove(channel);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
         }

@@ -44,11 +44,13 @@ namespace Solutioneers.Models
 
             public CategoryToChannel(Category theCategory, ICollection<Channel> theChannels)
             {
+            Channels = new List<ChannelVoteCounting>();
             //for all objects in theChannels we will cast them to an object to store in our dynamic 
             //data structure ObjectVoteCounting so we can easily counter the number of votes on the controller
                 foreach (Channel channel in theChannels)
                 {
-                ChannelVoteCounting temp = new ChannelVoteCounting(channel);
+                    
+                    ChannelVoteCounting temp = new ChannelVoteCounting(channel);
                     Channels.Add(temp);
                 }
                 Channel = new Channel();//We must create this to populate values if the list is empty
@@ -59,10 +61,10 @@ namespace Solutioneers.Models
         {
             public Channel Channel { get; set; }
             public Problem Problem { get; set; }
-            public ICollection<ProblemVoteCounting> Problems { get; set; }
+            public virtual ICollection<ProblemVoteCounting> Problems { get; set; }
             public ChannelToProblem(Channel theChannel, ICollection<Problem> theProblems)
             {
-
+                Problems = new List<ProblemVoteCounting>();
                 //for all objects in theChannels we will cast them to an object to store in our dynamic 
                 //data structure ObjectVoteCounting so we can easily counter the number of votes on the controller
                 foreach (Problem problem in theProblems)
@@ -82,6 +84,7 @@ namespace Solutioneers.Models
 
             public ChannelToSolution(Channel theChannel, ICollection<Solution> theSolutions)
             {
+            Solutions = new List<SolutionVoteCounting>();
                 //for all objects in theChannels we will cast them to an object to store in our dynamic 
                 //data structure ObjectVoteCounting so we can easily counter the number of votes on the controller
                 foreach (Solution solution in theSolutions)
@@ -97,7 +100,11 @@ namespace Solutioneers.Models
     {
         public Channel Channel { get; set; }
         public Category Category { get; set; }//the returned category
-        public ICollection<Category> Categories { get; set; } //the other 2 potential categories
+    }
+    public class VoteForChannel
+    {
+        public Channel Channel { get; set; }
+        public ChannelVote ChannelVote { get; set; }
 
     }
     

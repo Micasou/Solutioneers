@@ -13,11 +13,10 @@ namespace Solutioneers.Models
         [Key]
         public int VoteID { get; set; }
 
-        public int UserID { get; set; }
-        public virtual ApplicationUser ApplicationUser { get; set; }
+        public string UserID { get; set; }
 
         [ForeignKey("Problem")]//foriegn key must be same name as the virtual type
-        public int ProblemID { get; set; }
+        public virtual int ProblemID { get; set; }
         public virtual Problem Problem { get; set; }
 
         [DataType(DataType.Date)]

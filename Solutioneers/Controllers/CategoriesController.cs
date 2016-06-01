@@ -35,7 +35,7 @@ namespace Solutioneers.Controllers
             {
                 return HttpNotFound();
             }
-            ICollection<Channel> Channels = category.Channels;
+            ICollection<Channel> Channels = db.Channels.Where(a => a.CategoryID == category.CategoryID).ToList();
             CategoryToChannel returnView = new CategoryToChannel(category, Channels);
             if (returnView.Channels != null)
             { 

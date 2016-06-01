@@ -17,11 +17,10 @@ namespace Solutioneers.Models
         [Key]
         public virtual int ProblemID { get; set; } //Problem ID
 
-        public int UserID { get; set; } //User ID, the one who posted it.
-        public virtual ApplicationUser ApplicationUser { get; set; }
+        public string UserID { get; set; } //User ID, the one who posted it.
 
         [ForeignKey("Channel")]//foriegn key must be same name as the virtual type
-        public int ChannelID { get; set; }
+        public virtual int ChannelID { get; set; }
         public virtual Channel Channel { get; set; } //channel that this problem is attached to  
 
         [Required]

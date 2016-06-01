@@ -179,6 +179,7 @@
     <Compile Include="Controllers\ProblemVotesController.cs" />
     <Compile Include="Controllers\SolutionsController.cs" />
     <Compile Include="Controllers\SolutionVotesController.cs" />
+    <Compile Include="Controllers\TestChannelController.cs" />
     <Compile Include="DataAccessLayer\VotingContext.cs" />
     <Compile Include="DataAccessLayer\VotingInit.cs" />
     <Compile Include="Enums\FileType.cs" />
@@ -271,11 +272,6 @@
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
-    <Content Include="Views\Channels\Create.cshtml" />
-    <Content Include="Views\Channels\Delete.cshtml" />
-    <Content Include="Views\Channels\Details.cshtml" />
-    <Content Include="Views\Channels\Edit.cshtml" />
-    <Content Include="Views\Channels\Index.cshtml" />
     <Content Include="Views\Problems\Create.cshtml" />
     <Content Include="Views\Problems\Delete.cshtml" />
     <Content Include="Views\Problems\Details.cshtml" />
@@ -301,6 +297,16 @@
     <Content Include="Views\ChannelVotes\Details.cshtml" />
     <Content Include="Views\ChannelVotes\Edit.cshtml" />
     <Content Include="Views\ChannelVotes\Index.cshtml" />
+    <Content Include="Views\Channels\Create.cshtml" />
+    <Content Include="Views\Channels\Delete.cshtml" />
+    <Content Include="Views\Channels\Details.cshtml" />
+    <Content Include="Views\Channels\Edit.cshtml" />
+    <Content Include="Views\Channels\Index.cshtml" />
+    <Content Include="Views\TestChannel\Create.cshtml" />
+    <Content Include="Views\TestChannel\Delete.cshtml" />
+    <Content Include="Views\TestChannel\Details.cshtml" />
+    <Content Include="Views\TestChannel\Edit.cshtml" />
+    <Content Include="Views\TestChannel\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
