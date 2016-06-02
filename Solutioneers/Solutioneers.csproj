@@ -257,6 +257,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Messenger\Messenger.cshtml" />
     <Content Include="Views\Channels\Channels.cshtml" />
+    <Content Include="Views\Channels\Channel.cshtml" />
+    <Content Include="Views\Channels\Solution.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
