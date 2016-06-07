@@ -30,7 +30,7 @@
           <!--   We are passing the category ID-->
         </dl>
 
-        @Html.ActionLink("Create a new Channel","../TestChannel/create");
+        @Html.ActionLink("Create a new Channel","../channels/create");
 
     </div>
     <div class="row">
@@ -41,6 +41,9 @@
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Channel.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Channel.Votes)
                 </th>
                 <th></th>
             </tr>
@@ -56,6 +59,11 @@
                         @Html.DisplayFor(modelItem => item.CastThis.Description)
                     </td>
                     <td>
+                        @Html.DisplayFor(modelItem => item.CastThis.Votes.Count)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Up Vote", "ChannelVotesController/Vote", new { }) |
+                        @Html.ActionLink("Down Vote", "ChannelVotesController/Vote", new { }) |
                         @Html.ActionLink("Edit", "Edit", new { id = item.CastThis.ChannelID }) |
                         @Html.ActionLink("Details", "Details", new { id = item.CastThis.ChannelID }) |
                         @Html.ActionLink("Delete", "Delete", new { id = item.CastThis.ChannelID })

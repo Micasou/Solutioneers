@@ -12,6 +12,7 @@ using Solutioneers.Models;
 
 namespace Solutioneers.Controllers
 {
+    [Authorize]
     public class SolutionVotesController : Controller
     {
         private VotingContext db = new VotingContext();
@@ -36,6 +37,32 @@ namespace Solutioneers.Controllers
                 return HttpNotFound();
             }
             return View(solutionVote);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<PartialViewResult> Vote(bool theUpVote, int? id, int solutionID, string userName)
+        {
+            if (id == null)
+            {
+                return PartialView();
+            }
+            SolutionVote solutionVote = await db.SolutionVotes.FindAsync(id);
+            if (solutionVote == null)
+            {
+                solutionVote = new SolutionVote();
+                solutionVote.CreationDate = DateTime.Now;
+                solutionVote.Solution = await db.Solutions.FindAsync(solutionID);
+                solutionVote.SolutionID = solutionID;
+                solutionVote.UserID = userName;
+
+            }
+            else
+            {
+                solutionVote.upVote = theUpVote;
+                db.Entry(solutionVote).State = EntityState.Modified;
+            }
+            await db.SaveChangesAsync();
+            return PartialView(solutionVote);
         }
 
         // GET: SolutionVotes/Create

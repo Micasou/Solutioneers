@@ -12,6 +12,7 @@ using Solutioneers.Models;
 
 namespace Solutioneers.Controllers
 {
+    [Authorize]
     public class ProblemVotesController : Controller
     {
         private VotingContext db = new VotingContext();

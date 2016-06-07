@@ -9,6 +9,7 @@ namespace Solutioneers.Models
     /*
      * Only admins will have access to this model, so we will not create resitrctions on it for now.
      */
+
     public class Category
     {
         [Key]

@@ -12,17 +12,19 @@ using Solutioneers.Models;
 
 namespace Solutioneers.Controllers
 {
+    [Authorize]
     public class ChannelsController : Controller
     {
         private VotingContext db = new VotingContext();
 
-        // GET: Channels
+        // GET: TestChannel
         public async Task<ActionResult> Index()
         {
-            return View(await db.Channels.ToListAsync());
+            var channels = db.Channels.Include(c => c.Category);
+            return View(await channels.ToListAsync());
         }
 
-        // GET: Channels/Details/5
+        // GET: TestChannel/Details/5
         public async Task<ActionResult> Details(int? id)
         {
             if (id == null)
@@ -37,33 +39,32 @@ namespace Solutioneers.Controllers
             return View(channel);
         }
 
-        // GET: Channels/Create
+        // GET: TestChannel/Create
         public ActionResult Create()
         {
             ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Title");
             return View();
         }
 
-        // POST: Channels/Create
+        // POST: TestChannel/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "ChannelID,UserID,Title,Description,CreationDate")] Channel channel)
+        public async Task<ActionResult> Create([Bind(Include = "ChannelID,CategoryID,UserID,Title,Description,CreationDate")] Channel channel)
         {
             if (ModelState.IsValid)
             {
-                channel.UserID = User.Identity.Name;
-                channel.CreationDate = DateTime.Now;
                 db.Channels.Add(channel);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
+            ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Title", channel.CategoryID);
             return View(channel);
         }
 
-        // GET: Channels/Edit/5
+        // GET: TestChannel/Edit/5
         public async Task<ActionResult> Edit(int? id)
         {
             if (id == null)
@@ -75,15 +76,16 @@ namespace Solutioneers.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Title", channel.CategoryID);
             return View(channel);
         }
 
-        // POST: Channels/Edit/5
+        // POST: TestChannel/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "ChannelID,UserID,Title,Description,CreationDate")] Channel channel)
+        public async Task<ActionResult> Edit([Bind(Include = "ChannelID,CategoryID,UserID,Title,Description,CreationDate")] Channel channel)
         {
             if (ModelState.IsValid)
             {
@@ -91,10 +93,11 @@ namespace Solutioneers.Controllers
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
+            ViewBag.CategoryID = new SelectList(db.Categories, "CategoryID", "Title", channel.CategoryID);
             return View(channel);
         }
 
-        // GET: Channels/Delete/5
+        // GET: TestChannel/Delete/5
         public async Task<ActionResult> Delete(int? id)
         {
             if (id == null)
@@ -109,7 +112,7 @@ namespace Solutioneers.Controllers
             return View(channel);
         }
 
-        // POST: Channels/Delete/5
+        // POST: TestChannel/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
