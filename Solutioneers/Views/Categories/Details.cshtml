@@ -62,8 +62,8 @@
                         @Html.DisplayFor(modelItem => item.CastThis.Votes.Count)
                     </td>
                     <td>
-                        @Html.ActionLink("Up Vote", "ChannelVotesController/Vote", new { }) |
-                        @Html.ActionLink("Down Vote", "ChannelVotesController/Vote", new { }) |
+                        @Html.Action("Vote", "ChannelVotesController", new { theUpVote = true, id = Model.Channel.ChannelID, channelID = Model.Channel.ChannelID, userName = "stuff" }) |
+                        @Html.Action("Vote", "ChannelVotesController/Vote", new { }) |
                         @Html.ActionLink("Edit", "Edit", new { id = item.CastThis.ChannelID }) |
                         @Html.ActionLink("Details", "Details", new { id = item.CastThis.ChannelID }) |
                         @Html.ActionLink("Delete", "Delete", new { id = item.CastThis.ChannelID })
