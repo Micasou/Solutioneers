@@ -81,6 +81,7 @@ namespace Solutioneers.Controllers
         {
             if (ModelState.IsValid)
             {
+                channelVote.CreationDate = DateTime.Now;
                 db.ChannelVotes.Add(channelVote);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");

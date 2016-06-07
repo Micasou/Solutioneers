@@ -30,7 +30,7 @@
           <!--   We are passing the category ID-->
         </dl>
 
-        @Html.ActionLink("Create a new Channel","../channels/create");
+        @Html.ActionLink("Create a new Channel", "../channels/create");
 
     </div>
     <div class="row">
@@ -62,8 +62,14 @@
                         @Html.DisplayFor(modelItem => item.CastThis.Votes.Count)
                     </td>
                     <td>
-                        @Html.Action("Vote", "ChannelVotesController", new { theUpVote = true, id = Model.Channel.ChannelID, channelID = Model.Channel.ChannelID, userName = "stuff" }) |
-                        @Html.Action("Vote", "ChannelVotesController/Vote", new { }) |
+             <!--           ////Html.Action("Vote", "ChannelVotesController", new {area = "", theUpVote = true, id = Model.Channel.ChannelID, channelID = Model.Channel.ChannelID, userName = User.Identity.Name }) |
+                        <form method="post" action="/ChannelVotesController/vote/">
+                            <input type="submit" value="Up Vote" />
+                        </form>
+                        <form method="post" action="/ChannelVotesController/vote/">
+                            <input type="submit" value="Down Vote" />
+                        </form>-
+                  //Html.Action("Vote", "ChannelVotesController/Vote", new { }) |-->
                         @Html.ActionLink("Edit", "Edit", new { id = item.CastThis.ChannelID }) |
                         @Html.ActionLink("Details", "Details", new { id = item.CastThis.ChannelID }) |
                         @Html.ActionLink("Delete", "Delete", new { id = item.CastThis.ChannelID })
@@ -80,3 +86,5 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.Category.CategoryID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+
