@@ -309,6 +309,8 @@
     <Content Include="Views\Channels\Details.cshtml" />
     <Content Include="Views\Channels\Edit.cshtml" />
     <Content Include="Views\Channels\Index.cshtml" />
+    <Content Include="Views\Shared\CategoryPartial.cshtml" />
+    <Content Include="Views\Shared\ChannelPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

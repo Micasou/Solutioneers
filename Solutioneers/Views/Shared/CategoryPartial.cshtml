@@ -1,0 +1,26 @@
+﻿@model Solutioneers.Models.Category
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+        @if (Model.Channels != null)
+            {
+                foreach (var item in Model.Channels)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
