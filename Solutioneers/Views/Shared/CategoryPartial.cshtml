@@ -1,5 +1,5 @@
-﻿@model Solutioneers.Models.Category
-<div class="row">
+﻿@model IEnumerable<Solutioneers.Models.Category>
+<div>
     <table class="table">
         <tr>
             <th>
@@ -8,19 +8,23 @@
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th></th>
         </tr>
-        @if (Model.Channels != null)
-            {
-                foreach (var item in Model.Channels)
-                {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Title)
-                    </td>
-                </tr>
-            }
-        }
-    </table>
-</div>
 
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.CategoryID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.CategoryID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CategoryID })
+                </td>
+            </tr>
+        }
+        </table>
+</div>
