@@ -46,6 +46,14 @@ namespace Solutioneers.Controllers
             }
             return View(returnView);
         }
+        //This is used as a partial view actions
+        //see http://haacked.com/archive/2009/11/18/aspnetmvc2-render-action.aspx/ for more information
+      //  [ChildActionOnly]
+        public async Task<PartialViewResult> CategoryPartial()
+        {
+            ICollection<Category> categoriesPartial = await db.Categories.ToListAsync();
+            return PartialView(categoriesPartial);
+        }
 
         // GET: Categories/Create
         public ActionResult Create()
