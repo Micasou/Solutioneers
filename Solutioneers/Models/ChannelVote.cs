@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Solutioneers.Interfaces;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
 namespace Solutioneers.Models
 {
-    public class ChannelVote
+    public class ChannelVote : VoteInterface
     {
             [Key]
             public int  VoteID { get; set;}

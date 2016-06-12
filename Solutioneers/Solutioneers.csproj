@@ -184,15 +184,22 @@
     <Compile Include="Enums\FileType.cs" />
     <Compile Include="Enums\SecondaryRoles.cs" />
     <Compile Include="Enums\PrimaryRoles.cs" />
+    <Compile Include="Enums\States.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BusinessCategory.cs" />
+    <Compile Include="Models\BusinessChannel.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CategoryInterface.cs" />
     <Compile Include="Models\Channel.cs" />
+    <Compile Include="Models\Company.cs" />
     <Compile Include="Models\File.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ChannelInterface.cs" />
+    <Compile Include="Models\Location.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Message.cs" />
     <Compile Include="Models\Problem.cs" />

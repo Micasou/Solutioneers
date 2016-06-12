@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Solutioneers.Interfaces;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Web;
 
 namespace Solutioneers.Models
 {
-    public class SolutionVote
+    public class SolutionVote : VoteInterface
     {
             [Key]
             public int VoteID { get; set; }

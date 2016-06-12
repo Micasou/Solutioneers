@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Solutioneers.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +8,7 @@ using System.Web;
 
 namespace Solutioneers.Models
 {
-    public class Solution
+    public class Solution : IdeaInterface
     {
         /// <summary>
         /// Two keys indicates composite key.
