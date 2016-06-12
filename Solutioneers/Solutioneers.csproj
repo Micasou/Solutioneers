@@ -374,6 +374,7 @@
     <Content Include="Views\HoursOfOperations\Details.cshtml" />
     <Content Include="Views\HoursOfOperations\Edit.cshtml" />
     <Content Include="Views\HoursOfOperations\Index.cshtml" />
+    <Content Include="Views\Shared\BusinessCategoryPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
