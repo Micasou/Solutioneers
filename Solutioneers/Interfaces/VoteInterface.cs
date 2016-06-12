@@ -9,7 +9,6 @@ namespace Solutioneers.Models
 {
     interface VoteInterface
     {
-        int VoteID { get; set; }
         string UserID { get; set; }
         bool upVote { get; set; } //If true user voted up, if not, user voted down
         DateTime CreationDate { get; set; } //when the channel was created

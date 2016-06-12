@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Solutioneers.Models.HoursOfOperation>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Location.StreetAddress1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DayOfWeek)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeOpen)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location.StreetAddress1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DayOfWeek)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeOpen)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.HoursOfOperationID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.HoursOfOperationID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.HoursOfOperationID })
+        </td>
+    </tr>
+}
+
+</table>

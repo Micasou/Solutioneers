@@ -11,7 +11,7 @@ namespace Solutioneers.Models
     public class BusinessChannel : ChannelInterface
     {
         [Key]
-        public int ChannelID { get; set; } //Channel ID
+        public int BusinessChannelID { get; set; } //Channel ID
 
         [ForeignKey("Category")]//foriegn key must be same name as the virtual type
         public virtual int CategoryID { get; set; }

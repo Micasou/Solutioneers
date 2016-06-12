@@ -1,0 +1,42 @@
+﻿@model Solutioneers.Models.HoursOfOperation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>HoursOfOperation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Location.StreetAddress1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location.StreetAddress1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DayOfWeek)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DayOfWeek)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeOpen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeOpen)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.HoursOfOperationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

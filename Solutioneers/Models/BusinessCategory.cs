@@ -10,7 +10,7 @@ namespace Solutioneers.Models
     public class BusinessCategory : CategoryInterface
     {
         [Key]
-        public int CategoryID { get; set; } //Group ID
+        public int BusinessCategoryID { get; set; } //Group ID
 
         [Required]
         [MaxLength(30)]

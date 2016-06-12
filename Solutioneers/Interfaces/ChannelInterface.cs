@@ -8,7 +8,6 @@ namespace Solutioneers.Models
 {
     interface ChannelInterface
     {
-        int ChannelID { get; set; } //Channel ID
         string Description { get; set; }
         DateTime CreationDate { get; set; } //when the channel was created
     }

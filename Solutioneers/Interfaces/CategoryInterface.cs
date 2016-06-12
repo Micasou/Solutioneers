@@ -9,10 +9,6 @@ namespace Solutioneers.Models
 {
     interface CategoryInterface
     {
-        [Key]
-         int CategoryID { get; set; } //Group ID
-        [Required]
-        [MaxLength(30)]
         string Title { get; set; }
     }
 }

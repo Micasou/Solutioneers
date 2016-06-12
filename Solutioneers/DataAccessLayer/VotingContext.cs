@@ -22,6 +22,17 @@ namespace Solutioneers.DAL
         public DbSet<ProblemVote> ProblemVotes { get; set; }
         public DbSet<SolutionVote> SolutionVotes { get; set; }
 
+        //All the business databasemodels
+        public DbSet<BusinessCategory> BusinessCategories { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<HoursOfOperation> HoursOfOperations { get; set; }
+        public DbSet<BusinessChannel> BusinessChannels { get; set; }
+        public DbSet<Idea> Ideas { get; set; }
+        public DbSet<IdeaComment> IdeaComments { get; set; }
+        public DbSet<IdeaVote> IdeaVotes { get; set; }
+
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //Link that explains the blow code http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-a-more-complex-data-model-for-an-asp-net-mvc-application

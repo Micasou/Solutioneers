@@ -11,7 +11,7 @@ namespace Solutioneers.Models
     public class Idea : IdeaInterface
     {
         [Key]
-        public int SolutionID { get; set; }
+        public int IdeaID { get; set; }
         public string UserID { get; set; } //User ID
 
         [DataType(DataType.Date)]

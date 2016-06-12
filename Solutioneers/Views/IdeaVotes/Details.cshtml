@@ -1,0 +1,50 @@
+﻿@model Solutioneers.Models.IdeaVote
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>IdeaVote</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Idea.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Idea.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.upVote)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.upVote)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VoteID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
