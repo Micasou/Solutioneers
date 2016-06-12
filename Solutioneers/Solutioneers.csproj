@@ -182,23 +182,30 @@
     <Compile Include="DataAccessLayer\VotingContext.cs" />
     <Compile Include="DataAccessLayer\VotingInit.cs" />
     <Compile Include="Enums\FileType.cs" />
+    <Compile Include="Enums\Hours.cs" />
     <Compile Include="Enums\SecondaryRoles.cs" />
     <Compile Include="Enums\PrimaryRoles.cs" />
     <Compile Include="Enums\States.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\CommentInterface.cs" />
+    <Compile Include="Interfaces\IdeaInterface.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BusinessCategory.cs" />
     <Compile Include="Models\BusinessChannel.cs" />
     <Compile Include="Models\Category.cs" />
-    <Compile Include="Models\CategoryInterface.cs" />
+    <Compile Include="Interfaces\CategoryInterface.cs" />
     <Compile Include="Models\Channel.cs" />
     <Compile Include="Models\Company.cs" />
     <Compile Include="Models\File.cs" />
+    <Compile Include="Models\HoursOfOperation.cs" />
+    <Compile Include="Models\Idea.cs" />
+    <Compile Include="Models\IdeaComment.cs" />
+    <Compile Include="Models\IdeaVote.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ChannelInterface.cs" />
+    <Compile Include="Interfaces\ChannelInterface.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Message.cs" />
@@ -208,6 +215,7 @@
     <Compile Include="Models\Solution.cs" />
     <Compile Include="Models\ChannelVote.cs" />
     <Compile Include="Models\SolutionVote.cs" />
+    <Compile Include="Interfaces\VoteInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

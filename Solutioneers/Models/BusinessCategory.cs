@@ -15,6 +15,7 @@ namespace Solutioneers.Models
         [Required]
         [MaxLength(30)]
         public string Title { get; set; }
+
         [Required]
         [MaxLength(255)]    // sets max length to 255
         public string Description { get; set; }
@@ -22,5 +23,7 @@ namespace Solutioneers.Models
         [ForeignKey("Company")]
         public int CompanyID { get; set; }
         public virtual Company Company { get; set; }
+
+        public IEnumerable<BusinessChannel> BusinessChannels { get; set; }
     }
 }

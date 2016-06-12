@@ -20,6 +20,7 @@ namespace Solutioneers.Models
         [Required]
         [MaxLength(30)]
         public string Title { get; set; }
+
         [Required]
         [MaxLength(255)]    // sets max length to 255
         public string Description { get; set; }
@@ -27,8 +28,5 @@ namespace Solutioneers.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime CreationDate { get; set; } //when the channel was created
-                                                
-
-        
     }
 }
