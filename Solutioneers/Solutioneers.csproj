@@ -229,18 +229,16 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\headersheet.css" />
-    <Content Include="Content\reset.css" />
-    <Content Include="Content\responsive.css" />
-    <Content Include="Content\rubikfont.css" />
-    <Content Include="Content\site.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\examples.css" />
     <Content Include="fixedHeaders.html" />
     <Content Include="Content\jquery.fullPage.css" />
     <Content Include="Global.asax" />
-    <Content Include="img\logo.png" />
+    <Content Include="Content\Site.css" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.js" />
     <Content Include="Scripts\angular-resource.min.js" />
@@ -250,9 +248,6 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\angular-resource.min.js.map" />
-    <Content Include="fonts\Rubik-Light.ttf" />
-    <Content Include="fonts\Rubik-Medium.ttf" />
-    <Content Include="fonts\Rubik-Regular.ttf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -338,6 +333,8 @@
     <Content Include="Views\Channels\Details.cshtml" />
     <Content Include="Views\Channels\Edit.cshtml" />
     <Content Include="Views\Channels\Index.cshtml" />
+    <Content Include="Views\Shared\CategoryPartial.cshtml" />
+    <Content Include="Views\Shared\ChannelPartial.cshtml" />
     <Content Include="Views\BusinessCategories\Create.cshtml" />
     <Content Include="Views\BusinessCategories\Delete.cshtml" />
     <Content Include="Views\BusinessCategories\Details.cshtml" />
@@ -378,15 +375,7 @@
     <Content Include="Views\HoursOfOperations\Details.cshtml" />
     <Content Include="Views\HoursOfOperations\Edit.cshtml" />
     <Content Include="Views\HoursOfOperations\Index.cshtml" />
-    <Content Include="Views\Shared\BusinessCategoryListPartial.cshtml" />
-    <Content Include="Views\Shared\BusinessInfoPartial.cshtml" />
-    <Content Include="Views\Shared\BusinessIdeaPartial.cshtml" />
-    <Content Include="Views\Shared\IdeaCommentsPartial.cshtml" />
-    <Content Include="Views\Shared\BusinessIdeaListPartial.cshtml" />
-    <Content Include="Views\Shared\SplashPagePartial.cshtml" />
-    <Content Include="Views\Shared\DiscoverPartial.cshtml" />
-    <Content Include="Views\Shared\BusinessOverviewPartial.cshtml" />
-    <Content Include="Views\Shared\IdeaOverviewPartial.cshtml" />
+    <Content Include="Views\Shared\BusinessCategoryPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
