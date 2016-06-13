@@ -24,8 +24,10 @@ namespace Solutioneers
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/reset.css",
+                      "~/Content/rubikfont.css",
+                      "~/Content/site.css",
+                      "~/Content/responsive.css"));
         }
     }
 }

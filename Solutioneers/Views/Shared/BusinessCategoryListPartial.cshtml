@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Solutioneers.Models.BusinessCategory>
+
+<div class="row">
+    <div class="column-20">
+        test
+    </div>
+    <div class="column-80">
+        <div>
+            <!-- Help ! -->
+            @Html.ActionLink("Want to add your business? Click here to get started", "../BusinessCategories/Create")
+        </div>
+        <div class="row well">
+            @Html.DisplayNameFor(model => model.Company.CompanyName)
+            @Html.DisplayNameFor(model => model.Title)
+            @Html.DisplayNameFor(model => model.Description)
+        </div>
+    </div>
+</div>
+
+@foreach (var item in Model) {
+
+            @Html.DisplayFor(modelItem => item.Company.CompanyName)
+
+            @Html.DisplayFor(modelItem => item.Title)
+
+            @Html.DisplayFor(modelItem => item.Description)
+
+            @Html.ActionLink("Edit", "Edit", new { id=item.BusinessCategoryID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.BusinessCategoryID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.BusinessCategoryID })
+}
