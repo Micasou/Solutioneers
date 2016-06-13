@@ -1,6 +1,7 @@
 ﻿using Solutioneers.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -16,7 +17,8 @@ namespace Solutioneers.Models
         public string UserID { get; set; }
 
         [Required]
-        [MaxLength(500)]
+        [DisplayName("User Comment")]
+        [MaxLength(500, ErrorMessage = "The max length of a user comment is 500 characters")]
         public string UserComment { get; set; }
         //set time in the controller method to post to the DB
         [DataType(DataType.Date)]

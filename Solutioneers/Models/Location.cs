@@ -14,17 +14,18 @@ namespace Solutioneers.Models
         public int LocationID { get; set; }
 
         [Required]
-        [MaxLength(75)]
+        [MaxLength(75, ErrorMessageResourceName ="The max length of a street is 75 characters")]
         public string StreetAddress1 { get; set; }
-
-        [MaxLength(75)]
+        
+        [MaxLength(75, ErrorMessageResourceName = "The max length of a street is 75 characters")]
         public string StreetAddress2 { get; set; }
 
         [Required]
-        public short ZipCode { get; set; }
+        [RegularExpression(@"(^(?!0{5})(\d{5})(?!-?0{4})(-?\d{4})?$)", ErrorMessage = "Improperly formatted zip code.  It must be entered as nnnnn or nnnnn-nnnnn.")]
+        public string ZipCode { get; set; }
 
-        [Required]
-        [MaxLength(58)]
+        [Required(ErrorMessage = "City is required")]
+        [MaxLength(50, ErrorMessageResourceName = "The max length of a city name is 50 characters")]
         public string City { get; set; }
 
         [Required]

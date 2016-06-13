@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -11,11 +12,14 @@ namespace Solutioneers.Models
         [Key]
         public int CompanyID { get; set; } //Group ID
 
+        public string UserID { get; set; }
         [Required]
-        [MaxLength(30)]
+        [DisplayName("Company Name")]
+        [MaxLength(50, ErrorMessage = "Max Title Length is 50 characters")]
         public string CompanyName { get; set; }
+
         [Required]
-        [MaxLength(256)]    // sets max length to 255
+        [MaxLength(500, ErrorMessage = "Max Title Length is 500 characters")]
         public string Description { get; set; }
 
         public IEnumerable<Location> Locations { get; set; }

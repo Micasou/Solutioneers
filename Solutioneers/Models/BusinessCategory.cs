@@ -13,11 +13,11 @@ namespace Solutioneers.Models
         public int BusinessCategoryID { get; set; } //Group ID
 
         [Required]
-        [MaxLength(30)]
+        [MaxLength(50, ErrorMessage = "Max Title Length is 50 characters")]
         public string Title { get; set; }
 
         [Required]
-        [MaxLength(255)]    // sets max length to 255
+        [MaxLength(500, ErrorMessage = "Max Title Length is 500 characters")]
         public string Description { get; set; }
 
         [ForeignKey("Company")]

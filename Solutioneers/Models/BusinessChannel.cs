@@ -18,7 +18,7 @@ namespace Solutioneers.Models
         public virtual Category Category { get; set; } //Category this channel belongs too,public virtual Category Category { get; set; } //Category this channel belongs too,
 
         [Required]
-        [MaxLength(30)]
+        [MaxLength(50, ErrorMessage = "Max Title Length is 50 characters")]
         public string Title { get; set; }
 
         [Required]

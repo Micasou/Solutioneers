@@ -187,6 +187,7 @@
     <Compile Include="Controllers\SolutionsController.cs" />
     <Compile Include="Controllers\SolutionVotesController.cs" />
     <Compile Include="Controllers\ChannelsController.cs" />
+    <Compile Include="CustomDataAnnotations\MyAuthorizeAttribute.cs" />
     <Compile Include="DataAccessLayer\VotingContext.cs" />
     <Compile Include="DataAccessLayer\VotingInit.cs" />
     <Compile Include="Enums\FileType.cs" />

@@ -9,20 +9,24 @@ using System.Web;
 using System.Web.Mvc;
 using Solutioneers.DAL;
 using Solutioneers.Models;
+using System.Web.Routing;
 
 namespace Solutioneers.Controllers
 {
+    [Authorize]
     public class CompaniesController : Controller
     {
         private VotingContext db = new VotingContext();
 
         // GET: Companies
+        [AllowAnonymous]
         public async Task<ActionResult> Index()
         {
             return View(await db.Companies.ToListAsync());
         }
 
         // GET: Companies/Details/5
+        [AllowAnonymous]
         public async Task<ActionResult> Details(int? id)
         {
             if (id == null)
@@ -38,6 +42,7 @@ namespace Solutioneers.Controllers
         }
 
         // GET: Companies/Create
+
         public ActionResult Create()
         {
             return View();
@@ -72,7 +77,14 @@ namespace Solutioneers.Controllers
             {
                 return HttpNotFound();
             }
-            return View(company);
+            if (company.UserID.Equals(User.Identity)) //only owner of the company can edit anything related to it
+            {
+                return View(company);
+            }
+            else
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
         }
 
         // POST: Companies/Edit/5

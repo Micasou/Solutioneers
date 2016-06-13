@@ -20,10 +20,10 @@ namespace Solutioneers.Models
         //We must do custom data annotations to limit this number to 3 at any given time
 
         [Required]
-        [MaxLength(30)]
+        [MaxLength(50, ErrorMessage = "Max Title Length is 50 characters")]
         public string Title { get; set; }
         [Required]
-        [MaxLength(255)]    // sets max length to 255
+        [MaxLength(500, ErrorMessage = "Max description length is 500 characters")]   // sets max length to 255
         public string Description { get; set; }
 
         [ForeignKey("BusinessChannel")]//foriegn key must be same name as the virtual type
