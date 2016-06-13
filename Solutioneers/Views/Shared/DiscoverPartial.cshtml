@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Solutioneers.Models.Company>
+
+<div class="row">
+    search
+</div>
+
+<div class="wrap-group">
+    @foreach (var company in Model)
+    {
+        <div class="wrap-group-item well">
+            <div class="column">
+                <!--banner-->
+                <div class="frame-size-media">
+                    <img src="http://lorempixel.com/400/100/" />
+                </div>
+                <div class="row row-start row-centered indent-top">
+                    <div class="frame frame-circle frame-size-small">
+                        <img src="http://lorempixel.com/36/36/" />
+                    </div>
+                    <h1 class="indent">@company.CompanyName</h1>
+                </div>
+                <div class="row row-centered">
+                    <p class="indent-top">@company.Description</p>
+                    <a class="h4">more</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -4,39 +4,24 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div id="nav-top">
+    <div class="row">
+        <div class="row logo">
+            @Html.ActionLink("Solutioneers", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <div class="row notifications">
+            @Html.ActionLink("Home", "Index", "Home")
+            @Html.ActionLink("Categories", "Index", "Categories")
+            @Html.ActionLink("Channels", "Index", "Channels")
+            @Html.ActionLink("About", "About", "Home")
+            @Html.ActionLink("Contact", "Contact", "Home")
+        </div>
+        <div class="row userbar">
+            @Html.Partial("_LoginPartial")
+        </div>
+    </div>
+</div>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.CompanyName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.CompanyName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.Partial("BusinessCategoryPartial", item.BusinessCategories)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CompanyID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CompanyID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CompanyID })
-        </td>
-    </tr>
-}
-
-</table>
+<div>
+    @Html.Partial("SplashPagePartial", Model)
+</div>
