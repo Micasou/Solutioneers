@@ -6,7 +6,7 @@ using Solutioneers.Models;
 
 namespace Solutioneers.DAL
 {
-    public class VotingInit : System.Data.Entity.DropCreateDatabaseIfModelChanges<VotingContext>
+    public class VotingInit : System.Data.Entity.DropCreateDatabaseAlways<VotingContext>
     {
         protected override void Seed(VotingContext context)
         {
@@ -35,6 +35,43 @@ namespace Solutioneers.DAL
                   new Category { CategoryID = 20, Title= "Travel & Local", Description ="Some important shit here" },
                   new Category { CategoryID = 21, Title= "Weather", Description ="Some important shit here" }
             };
+
+            for (int i = 0, j =0; i < 10; i++)
+            {
+                Company populate = new Company();
+                populate.CompanyID = i;
+                populate.CreationDate = DateTime.Now;
+                populate.Description = "This is some dummy description number: " + i;
+                populate.CompanyName = "Company No: " + i;
+                populate.UserID = "Admin Dummy Data";
+                populate.Locations = new List<Location>();
+                
+                Location tempLocation = new Location();
+                tempLocation.LocationID = i;
+                tempLocation.Phone = "1111111111";
+                tempLocation.StreetAddress1 = "1234 Someplace NW ST";
+                tempLocation.State = Enums.State.WA;
+                tempLocation.ZipCode = "98402";
+                tempLocation.City = "Seattle";
+                tempLocation.CompanyID = populate.CompanyID;
+                tempLocation.Company = populate;
+                tempLocation.HoursOfOperation = new List<HoursOfOperation>();
+                /*
+                HoursOfOperation tempHours = new HoursOfOperation();
+                tempHours.HoursOfOperationID = i;
+                tempHours.DayOfWeek = DayOfWeek.Friday;
+                tempHours.LocationID = tempLocation.LocationID;
+                tempHours.Location = tempLocation;
+                tempHours.TimeOpen = "9 AM - 5 PM";
+
+                tempLocation.HoursOfOperation.Concat(new List<HoursOfOperation> { tempHours });
+                populate.Locations.Concat(new List<Location>{ tempLocation });
+
+               
+                context.HoursOfOperations.Add(tempHours);*/
+                 context.Locations.Add(tempLocation);
+                context.Companies.Add(populate);
+            }
             groups.ForEach(s => context.Categories.Add(s));
             context.SaveChanges(); 
         }

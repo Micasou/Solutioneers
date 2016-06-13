@@ -13,6 +13,7 @@ namespace Solutioneers.Enums
         Thursday,
         Friday,
         Saturday,
-        Sunday
+        Sunday,
+        Everyday
     }
 }
