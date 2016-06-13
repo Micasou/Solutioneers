@@ -457,6 +457,7 @@
     <Content Include="Views\Shared\IdeaCommentsPartial.cshtml" />
     <Content Include="Views\Shared\IdeaOverviewPartial.cshtml" />
     <Content Include="Views\Shared\SplashPagePartial.cshtml" />
+    <Content Include="Views\Shared\ideaVotingPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

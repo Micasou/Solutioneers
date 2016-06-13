@@ -57,6 +57,7 @@ namespace Solutioneers.Controllers
         {
             if (ModelState.IsValid)
             {
+                company.CreationDate = DateTime.Now;
                 db.Companies.Add(company);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");

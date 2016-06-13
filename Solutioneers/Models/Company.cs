@@ -22,6 +22,8 @@ namespace Solutioneers.Models
         [MaxLength(500, ErrorMessage = "Max Title Length is 500 characters")]
         public string Description { get; set; }
 
+        public DateTime CreationDate;
+
         public IEnumerable<Location> Locations { get; set; }
         public virtual ICollection<BusinessCategory> BusinessCategories { get; set; } //entity framework manages the foriegn keys for us
     }

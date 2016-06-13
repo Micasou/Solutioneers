@@ -22,7 +22,26 @@ namespace Solutioneers.Controllers
             var ideas = db.Ideas.Include(i => i.BusinessChannel);
             return View(await ideas.ToListAsync());
         }
-
+        public async void ChangeVote(int? id)
+        {
+            IdeaVote ideaVote = await db.IdeaVotes.FindAsync(id);
+            ideaVote.upVote = !ideaVote.upVote;
+            db.Entry(ideaVote).State = EntityState.Modified;
+            await db.SaveChangesAsync();
+        }
+        //Void call to the server, validation of unique user will be done on the front end
+        public async void UserVoteWithoutReload(Idea theIdea, bool theVote)
+        {
+            IdeaVote newIdeaVote = new IdeaVote();
+            newIdeaVote.UserID = User.Identity.Name;
+            newIdeaVote.upVote = theVote;
+            newIdeaVote.CreationDate = DateTime.Now;
+            newIdeaVote.Idea = theIdea;
+            newIdeaVote.SolutionID = theIdea.ChannelID;
+            newIdeaVote.VoteID = db.IdeaVotes.Count() + 1;
+            db.IdeaVotes.Add(newIdeaVote);
+            await db.SaveChangesAsync();
+        }
         // GET: Ideas/Details/5
         public async Task<ActionResult> Details(int? id)
         {
@@ -50,10 +69,11 @@ namespace Solutioneers.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "IdeaID,UserID,CreationDate,Title,Description,ChannelID")] Idea idea)
+        public async Task<ActionResult> Create([Bind(Include = "IdeaID,UserID,Title,Description,ChannelID")] Idea idea)
         {
             if (ModelState.IsValid)
             {
+                idea.CreationDate = DateTime.Now;
                 db.Ideas.Add(idea);
                 await db.SaveChangesAsync();
                 return RedirectToAction("Index");

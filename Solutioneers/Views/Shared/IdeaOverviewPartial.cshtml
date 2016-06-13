@@ -1,2 +1,16 @@
 ﻿@model Solutioneers.Models.Idea
+<div>
+    @Html.ActionLink("Up Vote", "Vote", null, new { id = "Voting" })
+    $("#Voting").click(function(e){
 
+    e.preventDefault();
+    $.ajax({
+    url:$(this).attr("href");
+    success: function(){
+    alert("You've Voted");  // or any other indication if you want to show
+    }
+
+    });
+
+    });
+</div>
