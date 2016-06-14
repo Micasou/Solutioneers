@@ -40,7 +40,31 @@ namespace Solutioneers.Controllers
             }
             return View(company);
         }
+        //[HttpGet]
+        public PartialViewResult GetDiscoverPartial(IEnumerable<Company> theCompanies)
+        {
+            return PartialView("DiscoverPartial", theCompanies);
+        }
 
+      //  [HttpGet]
+        public PartialViewResult GetCompanyInfo(Company theCompany)
+        {
+            return PartialView("BusinessOverviewPartial", theCompany);
+        }
+
+        [HttpGet]
+        public async Task<PartialViewResult> GetIdeaOverviewPartial(int id)
+        {
+            Idea theIdea = await db.Ideas.FindAsync(id);
+            return PartialView("IdeaOverviewPartial", theIdea);
+        }
+        [HttpPost]
+        public async Task<PartialViewResult> PostComment(int id)
+        {
+            Idea theIdea = await db.Ideas.FindAsync(id);
+
+            return PartialView("IdeaCommentsPartial", theIdea);
+        }
         // GET: Companies/Create
 
         public ActionResult Create()

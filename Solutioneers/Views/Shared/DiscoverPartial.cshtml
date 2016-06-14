@@ -21,7 +21,16 @@
                 </div>
                 <div class="row row-centered">
                     <p class="indent-top">@company.Description</p>
-                    <a class="h4">more</a>
+                    <a class="h4">
+                        <a>
+                            @Ajax.ActionLink("Company Details", "GetCompanyInfo", company, new AjaxOptions
+                       {
+                           HttpMethod = "GET",
+                           InsertionMode = InsertionMode.Replace,
+                           UpdateTargetId = "ParentPartialID"
+                       }
+       )
+                        </a>
                 </div>
             </div>
         </div>

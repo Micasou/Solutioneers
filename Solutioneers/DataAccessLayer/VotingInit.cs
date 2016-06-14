@@ -35,6 +35,7 @@ namespace Solutioneers.DAL
                   new Category { CategoryID = 20, Title= "Travel & Local", Description ="Some important shit here" },
                   new Category { CategoryID = 21, Title= "Weather", Description ="Some important shit here" }
             };
+            groups.ForEach(s => context.Categories.Add(s));
 
             for (int i = 0, j =0; i < 10; i++)
             {
@@ -44,8 +45,7 @@ namespace Solutioneers.DAL
                 populate.Description = "This is some dummy description number: " + i;
                 populate.CompanyName = "Company No: " + i;
                 populate.UserID = "Admin Dummy Data";
-                populate.Locations = new List<Location>();
-                
+
                 Location tempLocation = new Location();
                 tempLocation.LocationID = i;
                 tempLocation.Phone = "1111111111";
@@ -56,6 +56,18 @@ namespace Solutioneers.DAL
                 tempLocation.CompanyID = populate.CompanyID;
                 tempLocation.Company = populate;
                 tempLocation.HoursOfOperation = new List<HoursOfOperation>();
+
+                BusinessCategory tempBizCat = new BusinessCategory();
+                tempBizCat.BusinessCategoryID = i;
+                tempBizCat.Company = populate;
+                tempBizCat.Description = "This is a dummy description for a biz cat" + i;
+                tempBizCat.CompanyID = populate.CompanyID;
+                tempBizCat.Title = "BusinessCategory Temp Holder" + i;
+
+
+                populate.Locations = new List<Location> { tempLocation};
+                populate.BusinessCategories = new List<BusinessCategory> {tempBizCat };
+
                 /*
                 HoursOfOperation tempHours = new HoursOfOperation();
                 tempHours.HoursOfOperationID = i;
@@ -69,10 +81,11 @@ namespace Solutioneers.DAL
 
                
                 context.HoursOfOperations.Add(tempHours);*/
-                 context.Locations.Add(tempLocation);
+
+                context.BusinessCategories.Add(tempBizCat);
+                context.Locations.Add(tempLocation);
                 context.Companies.Add(populate);
             }
-            groups.ForEach(s => context.Categories.Add(s));
             context.SaveChanges(); 
         }
     }

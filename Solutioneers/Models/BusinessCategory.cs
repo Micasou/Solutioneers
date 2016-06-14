@@ -24,6 +24,6 @@ namespace Solutioneers.Models
         public int CompanyID { get; set; }
         public virtual Company Company { get; set; }
 
-        public IEnumerable<BusinessChannel> BusinessChannels { get; set; }
+        public IEnumerable<Idea> Ideas { get; set; }
     }
 }

@@ -5,8 +5,31 @@
     <div class="column-20">
         <a>Activity</a>
         <a>Discover</a>
+        <a> Subcriptions </a>
+       <a> @Ajax.ActionLink("Discover", "GetDiscoverPartial", new { theCompanies = Model.GetEnumerator() }, new AjaxOptions
+      {
+          HttpMethod = "GET",
+          InsertionMode = InsertionMode.Replace,
+          UpdateTargetId = "PartialSwap"
+      }
+       )
+           <input id="PartialSwap" type="button" value="Place your Order here">
+
+           @section scripts{
+               <script type="text/javascript">
+        $(document).ready(function(){
+            $("#PartialSwap").click(function () {
+                $.ajax({
+                    url: "/Companies/GetDiscoverPartial",
+                    type: "GET"
+                })
+            });
+        });
+               </script>
+           }
+        </a>
     </div>
-    <div class="column-80">
-        @Html.Partial("DiscoverPartial", Model)
+    <div class="column-80" ID="PartialSwap">
+      @Html.Partial("DiscoverPartial");
     </div>
 </div>

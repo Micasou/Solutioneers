@@ -1,2 +1,7 @@
 ﻿@model Solutioneers.Models.Company
-
+<div>
+    @Html.Partial("BusinessInfoPartial", Model)
+</div>
+<div>
+     @Html.Partial("BusinessCategoryListPartial", Model.BusinessCategories)
+</div>
