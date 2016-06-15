@@ -290,14 +290,15 @@
     <Content Include="bin\System.Web.WebPages.xml" />
     <Content Include="bin\WebGrease.dll" />
     <Content Include="Content\headersheet.css" />
+    <Content Include="Content\icomoon.css" />
     <Content Include="Content\reset.css" />
     <Content Include="Content\responsive.css" />
     <Content Include="Content\rubikfont.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\examples.css" />
     <Content Include="fixedHeaders.html" />
     <Content Include="Content\jquery.fullPage.css" />
+    <Content Include="fonts\icomoon.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\logo.png" />
@@ -318,6 +319,9 @@
     <Content Include="fonts\Rubik-Light.ttf" />
     <Content Include="fonts\Rubik-Medium.ttf" />
     <Content Include="fonts\Rubik-Regular.ttf" />
+    <Content Include="fonts\icomoon.eot" />
+    <Content Include="fonts\icomoon.ttf" />
+    <Content Include="fonts\icomoon.woff" />
     <None Include="Properties\PublishProfiles\Solutioneers - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -465,9 +469,6 @@
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>

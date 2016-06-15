@@ -158,3 +158,9 @@ C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csp
 C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\obj\Debug\Solutioneers.dll
 C:\Users\Tarik\Source\Repos\Solutioneers\Solutioneers\obj\Debug\Solutioneers.pdb
 C:\Users\AlexO_000\Documents\GitHub\Solutioneers\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csprojResolveAssemblyReference.cache
+D:\Solutioneers\Solutioneers\bin\Solutioneers.dll.config
+D:\Solutioneers\Solutioneers\bin\Solutioneers.dll
+D:\Solutioneers\Solutioneers\bin\Solutioneers.pdb
+D:\Solutioneers\Solutioneers\obj\Debug\Solutioneers.csprojResolveAssemblyReference.cache
+D:\Solutioneers\Solutioneers\obj\Debug\Solutioneers.dll
+D:\Solutioneers\Solutioneers\obj\Debug\Solutioneers.pdb

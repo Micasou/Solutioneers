@@ -26,6 +26,7 @@ namespace Solutioneers
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/reset.css",
                       "~/Content/rubikfont.css",
+                      "~/Content/icomoon.css",
                       "~/Content/site.css",
                       "~/Content/responsive.css"));
         }

@@ -2,32 +2,43 @@
 
 
 <div class="row">
-    <div class="column-20">
-        <a>Activity</a>
-        <a>Discover</a>
-        <a> Subcriptions </a>
-       <a> @Ajax.ActionLink("Discover", "GetDiscoverPartial", new { theCompanies = Model.GetEnumerator() }, new AjaxOptions
-      {
-          HttpMethod = "GET",
-          InsertionMode = InsertionMode.Replace,
-          UpdateTargetId = "PartialSwap"
-      }
-       )
-           <input id="PartialSwap" type="button" value="Place your Order here">
-
-           @section scripts{
-               <script type="text/javascript">
-        $(document).ready(function(){
-            $("#PartialSwap").click(function () {
-                $.ajax({
-                    url: "/Companies/GetDiscoverPartial",
-                    type: "GET"
-                })
-            });
-        });
-               </script>
+    <div class="column-20 left-nav-list">
+        <div class="column indent-top">
+            <div class="row">
+                <a class="link-p"><i class="icon-newspaper"></i> Activity</a>
+            </div>
+            <div class="row">
+                <a class="link-p"><i class="icon-earth"></i> Discover</a>
+            </div>
+            
+            <div class="row link-p">
+                    @Ajax.ActionLink("Discover", "GetDiscoverPartial", new { theCompanies = Model.GetEnumerator() }, new AjaxOptions
+           {
+               HttpMethod = "GET",
+               InsertionMode = InsertionMode.Replace,
+               UpdateTargetId = "PartialSwap"
            }
-        </a>
+       )
+                    <input id="PartialSwap" type="button" value="Place your Order here">
+
+                    @section scripts{
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $("#PartialSwap").click(function () {
+                                    $.ajax({
+                                        url: "/Companies/GetDiscoverPartial",
+                                        type: "GET"
+                                    })
+                                });
+                            });
+                        </script>
+                    }
+            </div>
+            <div class="separator indent-top"></div>
+            
+            <h2 class="indent indent-top">Subscriptions</h2>
+        </div>
+
     </div>
     <div class="column-80" ID="PartialSwap">
       @Html.Partial("DiscoverPartial");

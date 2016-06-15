@@ -6,8 +6,14 @@
     @Html.AntiForgeryToken()
 
     <div class="row">
-        @Html.ActionLink(User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-        <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+        <!-- make this a dropdown -->
+        <div class="frame frame-circle frame-size-xs indent-right">
+            <img src="http://lorempixel.com/27/27/" />
+        </div>
+        @Html.ActionLink(User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage", @class = "link-p" })
+        <i class="icon-caret"></i>
+        <!--
+        <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>-->
     </div>
     }
 }

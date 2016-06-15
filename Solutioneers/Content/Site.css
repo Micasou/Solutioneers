@@ -36,8 +36,28 @@ body {
     border-radius: 12px;
 }
 
+/* Forum elements
+*/
+
+input, select {
+    padding:6px;
+    border: 1px solid #ddd;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    background: #fff;
+    box-shadow: inset 0px 0px 2px 2px rgba(0,0,0,0.1);
+    -webkit-box-shadow: inset 0px 0px 2px 2px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px 0px 2px 2px rgba(0,0,0,0.1);
+}
+
 /* image frame
 */
+.frame-size-xs {
+    height: 27px;
+    width: 27px;
+}
+
 .frame-size-small {
     height: 36px;
     width: 36px;
@@ -101,33 +121,52 @@ body {
     margin-left:9px;
 }
 
-h1 {
+h1, .link-h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
     font-weight:600;
     color:#353838;
 }
 
+.link-h1:hover {
+    cursor:pointer;
+    color:#5fa6d1;
+}
+
 h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
-    margin-bottom: 18px;
+    margin-bottom: 9px;
     font-weight: 400;
     text-transform: uppercase;
     font-weight:600;
     color:#5fa6d1;
 }
 
-p {
+p, .link-p {
     font-family: 'Open Sans', sans-serif;
     font-size: 12pt;
     font-weight: 400;
     color: #626576;
 }
 
-h4 {
+.link-p:hover {
+    cursor:pointer;
+    color:#5fa6d1;
+}
+
+h4, .link-h4 {
     color: #c9c9c9;
     font-size: 9pt;
+}
+
+.link-h4 {
+    text-decoration:none;
+}
+
+.link-h4:hover {
+    cursor:pointer;
+    text-decoration:underline;
 }
 
 /* Button Formatting
@@ -164,6 +203,16 @@ h4 {
     border: 1px solid #dceaf2;
 }
 
+.btn-default {
+    color: #353838;
+    text-transform:uppercase;
+    background: #c9c9c9;
+    margin:9px 9px;
+    padding: 9px 18px;
+    border-radius: 5px;
+    border: 1px solid #dceaf2;
+}
+
 .disabled {
     color:#ddd;
 }
@@ -177,6 +226,13 @@ h4 {
     background-color: #fff;
     padding:9px;
     box-shadow: 0px 0px 2px #c9c9c9;
+}
+
+.well-inverted {
+    margin-top:9px;
+    padding: 9px;
+    border-top: 1px solid #c9c9c9;
+    background: #f0f1f2;
 }
 
 /* Flexbox Setup
@@ -203,6 +259,14 @@ h4 {
     justify-content: flex-start;
 }
 
+.row-end {
+    justify-content: flex-end;
+}
+
+.row-center {
+    justify-content: center;
+}
+
 .column-20, .column-33, .column-66, .column-80 {
     padding:9px;
 }
@@ -212,7 +276,6 @@ h4 {
       -ms-flex: 1 1 calc(100% / 3);
           flex: 1 1 calc(100% / 3);
   box-sizing: border-box;
-
 }
 
 .row  .column-66 {
@@ -237,7 +300,6 @@ h4 {
       -ms-flex: 1 1 20%;
           flex: 1 1 20%;
   box-sizing: border-box;
-
 }
 
 .row  .column-80 {
@@ -287,28 +349,33 @@ h4 {
     margin-bottom:9px;
 }
 
-/* Side Nav ---------------------------------------------------------------------
+/* Left Nav ---------------------------------------------------------------------
 */
-.message-list {
+.left-nav-list {
     background-color: #f5f6f7;
     border-right: 1px solid #dceaf2;
 }
 
-.message-list .row {
+.left-nav-list .row {
     align-items: center;
     padding: 4px 9px;
     cursor: pointer;
 }
 
-.message-list .row:hover {
+.left-nav-list .row:hover {
     background-color: #e4ebf0;
 }
 
-.frame-messages {
-    min-width:36px;
-    margin-top:27px;
-    margin-right:9px;
+.left-nav-list .row:hover > .link-p {
+    color: #5fa6d1;
 }
+
+.frame-left-nav {
+    min-width: 36px;
+    margin-top: 27px;
+    margin-right: 9px;
+}
+
 /* ------------------------------ Main Site ------------------------------ */
 
 /* Fixed Navigation Bar
@@ -341,11 +408,6 @@ h4 {
 
 #logoutForm .row {
     justify-content:flex-end;
-}
-
-.notifications {
-    align-self:baseline;
-    justify-content: space-around;
 }
 
 .userbar {

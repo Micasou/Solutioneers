@@ -7,14 +7,11 @@
 <div id="nav-top">
     <div class="row">
         <div class="row logo">
-            @Html.ActionLink("Solutioneers", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <img src="~/img/logo.png" />
         </div>
-        <div class="row notifications">
-            @Html.ActionLink("Home", "Index", "Home")
-            @Html.ActionLink("Categories", "Index", "Categories")
-            @Html.ActionLink("Channels", "Index", "Channels")
-            @Html.ActionLink("About", "About", "Home")
-            @Html.ActionLink("Contact", "Contact", "Home")
+        <div class="row row-centered row-center">
+            <a class="link-p indent-right">Activity</a>
+            <a class="link-p indent-right">Discover</a>
         </div>
         <div class="row userbar">
             @Html.Partial("_LoginPartial")

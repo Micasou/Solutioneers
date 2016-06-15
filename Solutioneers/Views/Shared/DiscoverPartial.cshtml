@@ -1,7 +1,15 @@
 ﻿@model IEnumerable<Solutioneers.Models.Company>
 
-<div class="row">
-    search
+<div class="row well" style="width:89%;">
+    <div class="row row-centered row-start">
+        <a class="link-h1 indent indent-right"><i class="icon-fire"></i> New</a>
+        <a class="link-p indent indent-right"><i class="icon-leaf"></i> Catagory 1</a>
+        <a class="link-p indent indent-right"><i class="icon-airplane"></i> Catagory 2</a>
+    </div>
+    <div class="row row-centered row-end">
+        <h1 class="indent-right">Search</h1>
+        <input />
+    </div>
 </div>
 
 <div class="wrap-group">
@@ -13,24 +21,28 @@
                 <div class="frame-size-media">
                     <img src="http://lorempixel.com/400/100/" />
                 </div>
-                <div class="row row-start row-centered indent-top">
+                <a class="row row-start row-centered indent-top">
                     <div class="frame frame-circle frame-size-small">
                         <img src="http://lorempixel.com/36/36/" />
                     </div>
-                    <h1 class="indent">@company.CompanyName</h1>
-                </div>
+                    <div class="link-h1 indent">@company.CompanyName</div>
+                </a>
+                <hr />
                 <div class="row row-centered">
                     <p class="indent-top">@company.Description</p>
-                    <a class="h4">
-                        <a>
+                    <div>
                             @Ajax.ActionLink("Company Details", "GetCompanyInfo", company, new AjaxOptions
                        {
                            HttpMethod = "GET",
                            InsertionMode = InsertionMode.Replace,
                            UpdateTargetId = "ParentPartialID"
-                       }
+                       }, new { @class = "link-h4" }
        )
-                        </a>
+                        <i class="icon-caret link-h4"></i>
+                    </div>
+                </div>
+                <div class="row well-inverted">
+                    <p>500 subscribers</p>
                 </div>
             </div>
         </div>
